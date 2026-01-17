@@ -1,0 +1,217 @@
+% main.tex
+\documentclass[12pt, a4paper, openany, oneside]{ctexbook}
+
+% ==========================================
+% 1. 基础宏包配置
+% ==========================================
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{mathrsfs}
+\usepackage[margin=2.5cm]{geometry} % 更简洁的写法
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor} % 需要加载 xcolor 来定义自定义颜色
+
+% --- 定义一套清新、低饱和度的色彩方案 (Material Design风格) ---
+\definecolor{mainBlue}{HTML}{1976D2}    % 定理 - 海蓝
+\definecolor{mainGreen}{HTML}{388E3C}   % 例题 - 森绿
+\definecolor{mainAmber}{HTML}{FBC02D}   % 注意 - 琥珀
+\definecolor{paleGray}{HTML}{F5F5F5}    % 通用极淡背景
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=mainBlue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=mainGreen,
+}
+
+% ==========================================
+% 2. 美化宏包 (tcolorbox) - 核心部分
+% ==========================================
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems, skins, breakable}
+
+% --- 定义一个通用的“清新风格”基础样式 ---
+% 特点：无边框，左侧有粗色条，背景极淡，直角
+\tcbset{
+    cleanstyle/.style={
+        enhanced,
+        breakable,
+        frame hidden,      % 隐藏四周所有边框
+        leftrule=3pt,      % 只保留左侧3pt粗的线条
+        boxrule=0pt,       % 其他边框宽度为0
+        arc=0pt, outer arc=0pt, % 直角，不圆润
+        titlerule=0pt,     % 标题和内容之间不要分割线
+        left=8pt, right=8pt, top=8pt, bottom=8pt, % 内部边距
+        toptitle=8pt, bottomtitle=4pt, % 标题边距
+        fonttitle=\bfseries\large,
+        coltitle=black,    % 标题文字颜色默认黑色
+    }
+}
+
+% --- 定义【定理】环境 (海蓝色风格) ---
+\newtcbtheorem[number within=chapter]{thm}{定理}{
+    cleanstyle, % 调用上面定义的基础风格
+    colframe=mainBlue,          % 左侧条颜色
+    colback=mainBlue!4!white,   % 背景色 (极淡的蓝白)
+    colbacktitle=mainBlue!4!white, % 标题背景色与内容一致
+    coltitle=mainBlue,          % 标题文字颜色变蓝
+    separator sign={\ $\cdot$\ },
+    description font=\bfseries\color{mainBlue!80!black}
+}{th}
+
+
+% --- 定义【提示/注意】环境 (琥珀色风格) ---
+% 注意环境不需要编号，所以用 newtcolorbox
+\newtcolorbox{note}{
+    cleanstyle,
+    colframe=mainAmber,
+    colback=mainAmber!8!white,
+    colbacktitle=mainAmber!8!white,
+    title={\textbf{注意}},
+    coltitle=mainAmber!70!black,
+    fontupper=\small % 内容字体稍微小一点点
+}
+
+% --- 定义【证明/解答】环境 ---
+% 回归最简洁的 amsthm 风格，或者用一个极简的 tcolorbox
+% 这里推荐用极简的 tcolorbox，带有缩进和灰色左条，区分度好
+\newtcolorbox{proofbox}{
+    enhanced, breakable, frame hidden, boxrule=0pt,
+    leftrule=2pt, colframe=gray!30!white, % 浅灰色左条
+    colback=white,
+    left=8pt, right=0pt, top=0pt, bottom=0pt,
+    arc=0pt, outer arc=0pt,
+    parbox=false, % 允许段落正常换行
+    before upper={\noindent\textbf{证明：}\ } % 开头加粗的“证明：”
+}
+\renewenvironment{proof}{\begin{proofbox}}{\qed\end{proofbox}}
+
+\newtcolorbox{solutionbox}{
+    enhanced, breakable, frame hidden, boxrule=0pt,
+    leftrule=2pt, colframe=gray!30!white,
+    colback=white,
+    left=8pt, right=0pt, top=0pt, bottom=0pt,
+    arc=0pt, outer arc=0pt,
+    parbox=false,
+    before upper={\noindent\textbf{解：}\ }
+}
+\newenvironment{solution}{\begin{solutionbox}}{\qed\end{solutionbox}}
+
+% 在 main.tex 中添加：
+\definecolor{mainPurple}{HTML}{7B1FA2} % 习题 - 紫色
+
+% --- 定义颜色 ---
+\definecolor{colPreview}{HTML}{009688}   % 预习 - 青色 (Teal)
+\definecolor{colExample}{HTML}{2E7D32}   % 例题 - 森绿 (Green)
+\definecolor{colProblem}{HTML}{673AB7}   % 练习 - 紫色 (Deep Purple)
+\definecolor{colHomework}{HTML}{E65100}  % 习题 - 暖橙 (Orange)
+
+% --- 1. 预习题 (Preview) ---
+\newtcbtheorem[number within=chapter]{preview}{预习}{
+    cleanstyle,
+    colframe=colPreview,
+    colback=colPreview!4!white,
+    colbacktitle=colPreview!4!white,
+    coltitle=colPreview,
+    separator sign={\ $\cdot$\ },
+    description font=\bfseries\color{colPreview!80!black}
+}{pre}
+
+% --- 2. 典型例题 (Example) ---
+\newtcbtheorem[number within=chapter]{example}{例题}{
+    cleanstyle,
+    colframe=colExample,
+    colback=colExample!5!white,
+    colbacktitle=colExample!5!white,
+    coltitle=colExample!90!black,
+    separator sign={\ $\cdot$\ },
+    description font=\bfseries\color{colExample!80!black}
+}{ex}
+
+% --- 3. 课堂练习/问题 (Problem) ---
+\newtcbtheorem[number within=chapter]{problem}{练习}{
+    cleanstyle,
+    colframe=colProblem,
+    colback=colProblem!4!white,
+    colbacktitle=colProblem!4!white,
+    coltitle=colProblem,
+    separator sign={\ $\cdot$\ },
+    description font=\bfseries\color{colProblem!80!black}
+}{prob}
+
+% --- 4. 课后习题 (Homework) ---
+\newtcbtheorem[number within=chapter]{homework}{作业}{
+    cleanstyle,
+    colframe=colHomework,
+    colback=colHomework!5!white,
+    colbacktitle=colHomework!5!white,
+    coltitle=colHomework,
+    separator sign={\ $\cdot$\ },
+    description font=\bfseries\color{colHomework!80!black}
+}{hw}
+% ==========================================
+% 3. 页眉页脚设置 (保持简洁)
+% ==========================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \leftmark} 
+\fancyhead[R]{\small 代数不等式讲义} 
+\fancyfoot[C]{\small \thepage} 
+\renewcommand{\headrulewidth}{0.4pt} % 页眉线细一点
+
+% ==========================================
+% 4. 文档主体
+% ==========================================
+\begin{document}
+
+% --- 封面 (稍微现代化一点) ---
+\begin{titlepage}
+    \centering
+    \vspace*{4cm}
+    {\Huge \bfseries \sffamily 重庆外国语学校-数学竞赛 \par} % 使用无衬线字体做大标题更现代
+    \vspace{1.5cm}
+    {\Huge \bfseries \sffamily 代数不等式 \par}
+    \vspace{0.5cm}
+    \rule{0.4\textwidth}{1pt} % 一条横线
+    \vspace{5cm}
+    
+    {\Large \sffamily \textbf{Joey} \par}
+    \vspace{1cm}
+    {\large \sffamily 2026.1.1 \par}
+\end{titlepage}
+
+\frontmatter
+{
+  \hypersetup{linkcolor=black} % 目录链接用黑色，不花哨
+  \tableofcontents
+}
+\newpage
+
+\mainmatter
+% 引入章节
+
+% \include{chapters/均值不等式}
+% \include{chapters/柯西不等式}
+\part{}
+\include{chapters/恒等变形}
+\include{chapters/abel变换}
+\include{chapters/局部不等式}
+\include{chapters/调整法}
+
+
+% \include{chapters/伯努利不等式}
+% \include{chapters/反向不等式}
+% \include{chapters/绝对值不等式}
+% \include{chapters/著名不等式}
+% \include{chapters/平均值原理}
+
+
+% \include{chapters/归纳法}
+
+
+
+% \include{chapters/综合练习1}
+
+
+\end{document}

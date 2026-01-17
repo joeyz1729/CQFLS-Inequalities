@@ -1,0 +1,149 @@
+% chapters/20_sorting_chebyshev.tex
+
+\chapter{排序不等式与切比雪夫不等式}
+
+排序不等式是除均值不等式和柯西不等式之外的第三种基本不等式，有别于前两种通过平方和得到大小关系，排序不等式是通过序来得到的。切比雪夫 (Chebyshev) 不等式可以认为是排序不等式的特殊情况，但因其结构整齐，特别在近年出现的频率很高。
+
+本讲介绍排序不等式和切比雪夫不等式的证明及应用。需要注意的是，有的题目虽然条件中没有给出序，但如果变量地位相同，我们可以不妨设一个序。
+
+\section{基础知识}
+
+\begin{thm}{排序不等式 (Rearrangement Inequality)}{rearrangement}
+设实数组 $a_1 \le a_2 \le \dots \le a_n$ 和 $b_1 \le b_2 \le \dots \le b_n$。
+若 $c_1, c_2, \dots, c_n$ 是 $b_1, b_2, \dots, b_n$ 的任一排列，则有：
+\begin{equation}
+    \sum_{i=1}^n a_i b_{n+1-i} \le \sum_{i=1}^n a_i c_i \le \sum_{i=1}^n a_i b_i
+\end{equation}
+即：\textbf{反序和 $\le$ 乱序和 $\le$ 同序和}。
+当且仅当 $a_1=\dots=a_n$ 或 $b_1=\dots=b_n$ 时等号成立（严格递增时，仅当排列对应相同时取等）。
+\end{thm}
+\vspace{1.5cm}
+
+\begin{thm}{切比雪夫不等式 (Chebyshev's Inequality)}{chebyshev}
+\begin{enumerate}
+    \item 若 $a_1 \le a_2 \le \dots \le a_n$ 且 $b_1 \le b_2 \le \dots \le b_n$（同序），则
+    \begin{equation}
+        n \sum_{i=1}^n a_i b_i \ge \left(\sum_{i=1}^n a_i\right) \left(\sum_{i=1}^n b_i\right)
+    \end{equation}
+    \item 若 $a_1 \le a_2 \le \dots \le a_n$ 且 $b_1 \ge b_2 \ge \dots \ge b_n$（反序），则
+    \begin{equation}
+        n \sum_{i=1}^n a_i b_i \le \left(\sum_{i=1}^n a_i\right) \left(\sum_{i=1}^n b_i\right)
+    \end{equation}
+\end{enumerate}
+\end{thm}
+\newpage
+
+\section{典型例题}
+
+% 例 1
+\begin{problem}{}{}
+设实数 $x_{1},x_{2},\dots,x_{n},y_{1},y_{2},\dots,y_{n}$ 满足 $x_{1}\ge x_{2}\ge\dots\ge x_{n},\ y_{1}\ge y_{2}\ge\dots\ge y_{n}$。$z_{1},z_{2},\dots,z_{n}$ 是 $y_1, y_2, \dots, y_n$ 的一个排列，求证：
+\begin{equation}
+    \sum_{i=1}^{n}(x_{i}-y_{i})^{2}\le\sum_{i=1}^{n}(x_{i}-z_{i})^{2}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 2
+\begin{problem}{}{}
+设 $\theta_{1},\theta_{2},\dots,\theta_{n}\in(0,\frac{\pi}{2})$，求证：
+\begin{equation}
+    \sum_{i=1}^{n}\theta_{i}\ge\sum_{i=1}^{n}\theta_{i}\cdot\frac{\sin \theta_{i+1}}{\sin \theta_{i}},
+\end{equation}
+其中 $\theta_{n+1}=\theta_{1}$。
+\end{problem}
+\newpage
+
+% 例 3
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是两两不同的正整数，求证：
+\begin{equation}
+    \sum_{k=1}^{n}\frac{a_{k}}{k^{2}}\ge\sum_{k=1}^{n}\frac{1}{k}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 4
+\begin{problem}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $a_{1}\ge a_{2}\ge\dots\ge a_{n},\ b_{1}\le b_{2}\le\dots\le b_{n}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}}{b_{i}}\ge\frac{a_{1}+a_{2}+\dots+a_{n}}{\sqrt[n]{b_{1}b_{2}\dots b_{n}}}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 5
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \frac{1}{\sum_{i=1}^n \frac{1}{1+a_i}} - \frac{1}{\sum_{i=1}^n \frac{1}{a_i}} \ge \frac{1}{n}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 6
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=1$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}\frac{1}{1-a_{i}}\right)\left(\sum_{1\le i<j\le n}a_{i}a_{j}\right)\le\frac{n}{2}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 7
+\begin{problem}{}{}
+给定整数 $n\ge3$。设非负实数 $a_{1}\le a_{2}\le\dots\le a_{n}$，且满足 $\sum_{i=1}^{n}a_{i}=1$。求 $a_{n}\sum_{i=1}^{n}(n+1-i)a_{i}$ 的最大值。
+\end{problem}
+\newpage
+
+% 例 8
+\begin{problem}{}{}
+给定整数 $n\ge2$。设非负实数 $a_{1}\ge a_{2}\ge\dots\ge a_{n},\ b_{1}\le b_{2}\le\dots\le b_{n}$，满足
+\begin{equation}
+    \sum_{i=1}^n a_i a_{n+1-i} = \sum_{i=1}^n b_i b_{n+1-i} = 1.
+\end{equation}
+求 $\sum_{1\le i<j\le n}a_{i}b_{j}$ 的最小值。
+\end{problem}
+\newpage
+
+\section{课后练习}
+
+% 作业题 1
+\begin{problem}{作业题 1}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是 $1,2,\dots,n$ 的一个排列，求证：
+\begin{equation}
+    \sum_{k=2}^{n}\frac{a_{k-1}}{a_{k}}\ge\sum_{k=2}^{n}\frac{k-1}{k}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 2
+\begin{problem}{作业题 2}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是非负实数。对 $1\le k \le n$，定义 
+\[
+C_k = \max\{a_{1}b_{k},a_{2}b_{k},\dots,a_{k}b_{k},a_{k}b_{k-1},\dots,a_{k}b_{1}\}.
+\]
+设 $\sigma$ 是 $1 \sim n$ 的一个置换，求证：
+\begin{equation}
+    a_{1}b_{\sigma(1)}+a_{2}b_{\sigma(2)}+\dots+a_{n}b_{\sigma(n)}\le C_{1}+C_{2}+\dots+C_{n}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 3
+\begin{problem}{作业题 3}{}
+给定整数 $n\ge2$。求最大的正实数 $\lambda$，使得对任意满足 $x_{1}\le x_{2}\le\dots\le x_{n},\ y_{1}\le y_{2}\le\dots\le y_{n}$ 且 $\sum_{i=1}^{n}x_{i}=\sum_{i=1}^{n}y_{i}=0$ 的实数 $x_{1},x_{2},\dots,x_{n},y_{1},y_{2},\dots,y_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n}x_{i}y_{i}\ge\lambda \max_{1\le i\le n}x_{i}y_{i}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 4
+\begin{problem}{作业题 4}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=1$。求证：
+\begin{equation}
+    (n-1)\sum_{i=1}^{n}\frac{1}{1-a_{i}}\ge(n+1)\sum_{i=1}^{n}\frac{1}{1+a_{i}}.
+\end{equation}
+\end{problem}
+\newpage

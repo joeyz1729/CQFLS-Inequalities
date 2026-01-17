@@ -1,0 +1,143 @@
+% chapters/15_other_famous.tex
+
+\chapter{其他著名不等式}
+
+\section{基础知识}
+
+\begin{thm}{Jensen 不等式}{}
+\begin{enumerate}
+    \item 设 $f(x)$ 是 $[a,b]$ 上的下凸函数，则对任意 $x_{1},x_{2},\dots,x_{n}\in [a,b]$，有
+    \begin{equation}
+        f\left(\frac{1}{n}\sum_{i=1}^{n}x_{i}\right)\le\frac{1}{n}\sum_{i=1}^{n}f(x_{i})
+    \end{equation}
+    当且仅当 $x_{1}=x_{2}=\dots=x_{n}$ 时等号成立。
+    
+    \item 设 $f(x)$ 是 $[a,b]$ 上的下凸函数，正实数 $\lambda_{1},\lambda_{2},\dots,\lambda_{n}$ 满足 $\sum_{i=1}^{n}\lambda_{i}=1$。则对任意 $x_{1},x_{2},\dots,x_{n}\in[a,b]$，有
+    \begin{equation}
+        f\left(\sum_{i=1}^{n}\lambda_{i}x_{i}\right)\le\sum_{i=1}^{n}\lambda_{i}f(x_{i})
+    \end{equation}
+    当且仅当 $x_{1}=x_{2}=\dots=x_{n}$ 时等号成立。
+\end{enumerate}
+\end{thm}
+% \vspace{2cm}
+\newpage
+\begin{thm}{加权均值不等式}{}
+设正实数 $\lambda_{1},\lambda_{2},\dots,\lambda_{n}$ 满足 $\sum_{i=1}^{n}\lambda_{i}=1$，$a_{1},a_{2},\dots,a_{n}$ 是正实数，则
+\begin{equation}
+    \sum_{i=1}^{n}\lambda_{i}a_{i}\ge\prod_{i=1}^{n}a_{i}^{\lambda_{i}}
+\end{equation}
+当且仅当 $a_{1}=a_{2}=\dots=a_{n}$ 时等号成立。
+\end{thm}
+\vspace{6.5cm}
+
+\begin{thm}{幂平均不等式}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，非零实数 $\alpha<\beta$。则
+\begin{equation}
+    \left(\frac{1}{n}\sum_{i=1}^{n}a_{i}^{\alpha}\right)^{\frac{1}{\alpha}}\le\left(\frac{1}{n}\sum_{i=1}^{n}a_{i}^{\beta}\right)^{\frac{1}{\beta}}
+\end{equation}
+当且仅当 $a_{1}=a_{2}=\dots=a_{n}$ 时等号成立。
+\end{thm}
+% \vspace{5cm}
+\newpage 
+
+\begin{thm}{范数不等式}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是非负实数，正实数 $\alpha<\beta$。则
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}^{\beta}\right)^{\frac{1}{\beta}}\le\left(\sum_{i=1}^{n}a_{i}^{\alpha}\right)^{\frac{1}{\alpha}}
+\end{equation}
+当且仅当 $a_{1},a_{2},\dots,a_{n}$ 中至少有 $n-1$ 个为 0 时等号成立。
+\end{thm}
+\newpage
+
+\begin{thm}{Hölder 不等式}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是正实数，$p,q$ 是大于 1 的实数，满足 $\frac{1}{p}+\frac{1}{q}=1$。则
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}b_{i}\le\left(\sum_{i=1}^{n}a_{i}^{p}\right)^{\frac{1}{p}}\left(\sum_{i=1}^{n}b_{i}^{q}\right)^{\frac{1}{q}}
+\end{equation}
+当且仅当 $\frac{a_{1}^{p}}{b_{1}^{q}}=\frac{a_{2}^{p}}{b_{2}^{q}}=\dots=\frac{a_{n}^{p}}{b_{n}^{q}}$ 时等号成立。
+\end{thm}
+\newpage
+
+\begin{thm}{Minkowski 不等式}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是正实数，实数 $p\ge1$。则
+\begin{equation}
+    \left(\sum_{i=1}^{n}(a_{i}+b_{i})^{p}\right)^{\frac{1}{p}}\le\left(\sum_{i=1}^{n}a_{i}^{p}\right)^{\frac{1}{p}}+\left(\sum_{i=1}^{n}b_{i}^{p}\right)^{\frac{1}{p}}
+\end{equation}
+当且仅当 $\frac{a_{1}}{b_{1}}=\frac{a_{2}}{b_{2}}=\dots=\frac{a_{n}}{b_{n}}$ 时等号成立。
+\end{thm}
+\newpage
+
+\section{例题}
+% === 例题部分 ===
+
+
+% 例 1
+\begin{example}{樊畿不等式}{}
+设 $a_{1},a_{2},\dots,a_{n}\in(0,\frac{1}{2}]$，求证：
+\begin{equation}
+    \frac{(\prod_{i=1}^{n}a_{i})^{\frac{1}{n}}}{\frac{1}{n}\sum_{i=1}^{n}a_{i}} \le \frac{(\prod_{i=1}^{n}(1-a_{i}))^{\frac{1}{n}}}{\frac{1}{n}\sum_{i=1}^{n}(1-a_{i})}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 2
+\begin{example}{}{}
+设 $n$ 是正整数，$x_{1},x_{2},\dots,x_{n+1},p,q$ 是正实数，满足 $p<q$，且 $x_{n+1}^{p}> x_{1}^{p}+x_{2}^{p}+\dots+x_{n}^{p}$。求证：
+\begin{enumerate}
+    \item $x_{n+1}^{q}>x_{1}^{q}+x_{2}^{q}+\dots+x_{n}^{q}$
+    \item $(x_{n+1}^{p}-\sum_{i=1}^{n}x_{i}^{p})^{\frac{1}{p}}<(x_{n+1}^{q}-\sum_{i=1}^{n}x_{i}^{q})^{\frac{1}{q}}.$
+\end{enumerate}
+\end{example}
+\newpage
+
+% 例 3
+\begin{example}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{k=1}^{n}\frac{1}{a_{k}}=1$。求证：
+\begin{equation}
+    \sum_{k=1}^{n}\frac{a_{k}^{a_{k}-1}}{(a_{k}^{a_{k}}-1)^{n}}\ge\frac{a_{1}a_{2}\dots a_{n}}{(a_{1}a_{2}\dots a_{n}-1)^{n}}.
+\end{equation}
+\end{example}
+\newpage
+
+% === 作业题部分 ===
+\section{练习题}
+% 作业题 1
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是不小于 1 的实数，求证：
+\begin{equation}
+    \frac{1}{a_{1}+1}+\frac{1}{a_{2}+1}+\dots+\frac{1}{a_{n}+1}\ge\frac{n}{\sqrt[n]{a_{1}a_{2}\dots a_{n}}+1}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 2
+\begin{problem}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=1$。求证：
+\begin{equation}
+    \prod_{i=1}^{n}\frac{1+a_{i}}{a_{i}}\ge\prod_{i=1}^{n}\frac{n-a_{i}}{1-a_{i}}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 3
+\begin{problem}{}{}
+设 $m,n$ 是给定的大于 1 的整数，$\alpha<\beta$ 是给定的正实数，对不全为 0 的非负实数 $a_{ij}\ (1\le i\le n,\ 1\le j\le m)$，求
+\begin{equation}
+    \frac{\left[\sum_{j=1}^{m}\left(\sum_{i=1}^{n}a_{ij}^{\alpha}\right)^{\frac{\beta}{\alpha}}\right]^{\frac{1}{\beta}}}{\left[\sum_{i=1}^{n}\left(\sum_{j=1}^{m}a_{ij}^{\beta}\right)^{\frac{\alpha}{\beta}}\right]^{\frac{1}{\alpha}}}
+\end{equation}
+的最大值。
+\end{problem}
+\newpage
+
+% 作业题 4
+\begin{problem}{}{}
+给定正整数 $n$。求最大的实数 $\lambda$，使得对所有满足
+\begin{equation}
+    \frac{1}{2n}\sum_{i=1}^{2n}(x_{i}+2)^{n}\ge\prod_{i=1}^{2n}x_{i}
+\end{equation}
+的正实数 $x_{1},x_{2},\dots,x_{2n}$，都有
+\begin{equation}
+    \frac{1}{2n}\sum_{i=1}^{2n}(x_{i}+1)^{n}\ge\lambda\prod_{i=1}^{2n}x_{i}.
+\end{equation}
+\end{problem}
+\newpage

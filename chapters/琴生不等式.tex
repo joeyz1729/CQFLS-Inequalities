@@ -1,0 +1,149 @@
+% chapters/16_convex_func.tex
+
+\chapter{凸函数与不等式}
+
+本讲介绍凸函数的两个应用，一是用于处理变量有界的情形；二是卡拉玛特 (Karamata) 不等式，这两个都是强有力的工具，有了它们会对之前的很多问题有新的理解。
+
+\section{重要定理}
+
+\begin{thm}{优超关系 (Majorization)}{majorization_def}
+设 $x_{1},x_{2},\dots,x_{n}$ 和 $y_{1},y_{2},\dots,y_{n}$ 是实数，如果满足：
+\begin{enumerate}
+    \item $x_{1}\ge x_{2}\ge\dots\ge x_{n}$ 且 $y_{1}\ge y_{2}\ge\dots\ge y_{n}$;
+    \item 对任意 $1\le k\le n-1$，有 $\sum_{i=1}^k x_i \ge \sum_{i=1}^k y_i$;
+    \item $\sum_{i=1}^n x_i = \sum_{i=1}^n y_i$.
+\end{enumerate}
+则称 $(x_{1},x_{2},\dots,x_{n})$ 优超于 $(y_{1},y_{2},\dots,y_{n})$，记作 $(x)\succ(y)$。
+\end{thm}
+\vspace{1.5cm}
+
+\begin{thm}{卡拉玛特不等式 (Karamata's Inequality)}{karamata}
+设 $(x_{1},x_{2},\dots,x_{n}) \succ (y_{1},y_{2},\dots,y_{n})$。
+\begin{enumerate}
+    \item 若 $f(x)$ 是区间 $I$ 上的**下凸函数** (Convex)，则
+    \begin{equation}
+        \sum_{i=1}^{n}f(x_{i})\ge\sum_{i=1}^{n}f(y_{i})
+    \end{equation}
+    \item 若 $f(x)$ 是区间 $I$ 上的**上凸函数** (Concave)，则
+    \begin{equation}
+        \sum_{i=1}^{n}f(x_{i})\le\sum_{i=1}^{n}f(y_{i})
+    \end{equation}
+\end{enumerate}
+\end{thm}
+\vspace{1.5cm}
+
+\begin{thm}{Popoviciu 不等式}{popoviciu}
+设 $f(x)$ 是 $I$ 上的下凸函数，则对任意实数 $a_{1},a_{2},\dots,a_{n} \in I$，都有
+\begin{equation}
+    \sum_{i=1}^{n}f(a_{i}) + n(n-2)f(a) \ge (n-1)\sum_{i=1}^{n}f(b_{i})
+\end{equation}
+其中 $a = \frac{1}{n}\sum_{i=1}^n a_i$，$b_{i} = \frac{1}{n-1}\sum_{j\ne i}a_{j}$。
+\end{thm}
+\vspace{1.5cm}
+
+% === 例题部分 ===
+
+% 例 1
+\begin{problem}{}{}
+给定整数 $n\ge3$，设 $a_{1},a_{2},\dots,a_{n}\in[0,1]$，求 $\sum_{i=1}^{n}a_{i}-\sum_{i=1}^{n}a_{i}a_{i+1}$ 的最值，其中 $a_{n+1}=a_{1}$。
+\end{problem}
+\newpage
+
+% 例 2
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $m<M$，实数 $a_{1},a_{2},\dots,a_{n}\in[m,M]$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)\left(\sum_{i=1}^{n}\frac{1}{a_{i}}\right)\le n^{2}+\left[\frac{n^{2}}{4}\right]\frac{(M-m)^{2}}{Mm}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 3
+\begin{problem}{}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n}\in[0,1]$。记 $S=\sum_{i=1}^{n}a_{i}$，求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}}{1+S-a_{i}}+\prod_{i=1}^{n}(1-a_{i})\le1.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 4
+\begin{problem}{}{}
+给定整数 $n>2$。设非负实数 $x_{1},x_{2},\dots,x_{n}$ 满足 $\sum_{i=1}^{n}x_{i}=1$，求
+\begin{equation}
+    x_{1}^{2}+x_{2}^{2}+\dots+x_{n}^{2}+2\sqrt{x_{1}x_{2}\dots x_{n}}
+\end{equation}
+的最大值和最小值。
+\end{problem}
+\newpage
+
+% 例 5
+\begin{problem}{}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是非负实数，求证：
+\begin{equation}
+    \left(\frac{n}{n-1}\right)^{n-1}\left(\frac{1}{n}\sum_{i=1}^{n}a_{i}^{2}\right)+\left(\frac{1}{n}\sum_{i=1}^{n}b_{i}\right)^{2}\ge\prod_{i=1}^{n}(a_{i}^{2}+b_{i}^{2})^{\frac{1}{n}}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 6
+\begin{problem}{}{}
+设实数 $a_{1},a_{2},\dots,a_{1997}\in[-\frac{1}{\sqrt{3}},\sqrt{3}]$，且满足 $\sum_{i=1}^{1997}a_{i}=-318\sqrt{3}$。求 $\sum_{i=1}^{1997}a_{i}^{12}$ 的最大值。
+\end{problem}
+\newpage
+
+% 例 7
+\begin{problem}{}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n}\in(n-1,n)$。记 $S=\sum_{i=1}^{n}a_{i}$，求证：
+\begin{equation}
+    \prod_{i=1}^{n}a_{i}\ge\prod_{i=1}^{n}(S-(n-1)a_{i}).
+\end{equation}
+\end{problem}
+\newpage
+
+% 例 8
+\begin{problem}{}{}
+设整数 $n\ge3$，正实数 $a_{1}\ge a_{2}\ge\dots\ge a_{n}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\sqrt{2a_{i}+a_{i+1}}\le\sum_{i=1}^{n}\sqrt{a_{i}+a_{i+1}+a_{i+2}},
+\end{equation}
+其中 $a_{n+1}=a_{1},\ a_{n+2}=a_{2}$。
+\end{problem}
+\newpage
+
+% === 作业题部分 ===
+
+% 作业题 1
+\begin{problem}{Ozeki 不等式}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 和 $b_{1},b_{2},\dots,b_{n}$ 满足 $0\le m_{1}\le a_{i}\le M_{1},\ 0\le m_{2}\le b_{i}\le M_{2}$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}b_{i}^{2}\right)-\left(\sum_{i=1}^{n}a_{i}b_{i}\right)^{2}\le\left[\frac{n^{2}}{3}\right](M_{1}M_{2}-m_{1}m_{2})^{2}.
+\end{equation}
+\end{problem}
+\newpage
+
+% 作业题 2
+\begin{problem}{作业题 2}{}
+给定整数 $n\ge2$。设实数 $0\le a_{1}\le a_{2}\le\dots\le a_{n}\le1$，求
+\begin{equation}
+    \sum_{1\le i<j\le n}(a_{j}-a_{i}+1)^{2}+4\sum_{i=1}^{n}a_{i}^{2}
+\end{equation}
+的最大值。
+\end{problem}
+\newpage
+
+% 作业题 3
+\begin{problem}{作业题 3}{}
+给定正整数 $n$ 和正实数 $a$。设 $k, x_{1},x_{2},\dots,x_{k}$ 是正整数，且满足 $x_{1}+x_{2}+\dots+x_{k}=n$。求 $a^{x_{1}}+a^{x_{2}}+\dots+a^{x_{k}}$ 的最大值。
+\end{problem}
+\newpage
+
+% 作业题 4
+\begin{problem}{作业题 4}{}
+设整数 $n\ge3$，正实数 $a_{1}\ge a_{2}\ge\dots\ge a_{n}$。求证：
+\begin{equation}
+    \prod_{i=1}^{n}\frac{a_{i}+a_{i+1}}{2}\le\prod_{i=1}^{n}\frac{a_{i}+a_{i+1}+a_{i+2}}{3},
+\end{equation}
+其中 $a_{n+1}=a_{1},\ a_{n+2}=a_{2}$。
+\end{problem}
+\newpage

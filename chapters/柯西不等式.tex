@@ -1,0 +1,551 @@
+% chapters/06_cauchy.tex
+
+\chapter{柯西不等式}
+
+\section{柯西不等式 (一)}
+
+% 例 1
+\begin{thm}{积分形式}{}
+设 $f,g$ 是区间 $[a,b]$ 上的可积函数，求证：
+\begin{equation}
+    \left(\int_{a}^{b}f(x)^{2}dx\right)\left(\int_{a}^{b}g(x)^{2}dx\right)\ge\left(\int_{a}^{b}f(x)g(x)dx\right)^{2}.
+\end{equation}
+\end{thm}
+
+
+% 例 2
+\begin{thm}{Wagner 不等式}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，$x\in[0,1]$。求证：
+\begin{equation}
+    \left(\sum_{k=1}^{n}a_{k}^{2}+2x\sum_{1\le i<j\le n}a_{i}a_{j}\right)\left(\sum_{k=1}^{n}b_{k}^{2}+2x\sum_{1\le i<j\le n}b_{i}b_{j}\right)\ge\left(\sum_{k=1}^{n}a_{k}b_{k}+x\sum_{i\ne j}a_{i}b_{j}\right)^{2}.
+\end{equation}
+\end{thm}
+
+
+% 例 3
+\begin{thm}{Aczel 不等式}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，满足 $a_{1}^{2}>\sum_{i=2}^{n}a_{i}^{2}$。求证：
+\begin{equation}
+    \left(a_{1}^{2}-\sum_{i=2}^{n}a_{i}^{2}\right)\left(b_{1}^{2}-\sum_{i=2}^{n}b_{i}^{2}\right)\le\left(a_{1}b_{1}-\sum_{i=2}^{n}a_{i}b_{i}\right)^{2}.
+\end{equation}
+\end{thm}
+
+\newpage
+\section{反向柯西处理}
+% 例 9
+\begin{problem}{2006 CTST}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=1$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}\sqrt{a_{i}}\right)\left(\sum_{i=1}^{n}\frac{1}{\sqrt{1+a_{i}}}\right)\le\frac{n^{2}}{\sqrt{n+1}}.
+\end{equation}
+\end{problem}
+
+% 第 20 题
+\begin{problem}{}{}
+已知正实数 $x_1,x_2,\dots,x_n$ 满足 $\sum_{i=1}^n x_i=1$，证明：
+\begin{equation}
+    \Bigl(\sum_{i=1}^n\sqrt{x_i}\Bigr)^2\cdot\sum_{i=1}^n\frac{1}{1+x_i} \le\frac{n^3}{n+1}
+\end{equation}
+\end{problem}
+
+% 例 8
+\begin{problem}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\frac{2}{n-1}\sum_{1\le i<j\le n}a_{i}a_{j}$。
+对 $1\le i\le n$，记 $x_{i}=\sum_{j=1}^{n}a_{j}-a_{i}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{1}{1+x_{i}}\le1.
+\end{equation}
+\end{problem}
+% 作业 4
+\begin{problem}{作业题 4}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}^{2}=n$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)^{2}\left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2}+1}\right)\le\frac{n^{3}}{2}.
+\end{equation}
+\end{problem}
+
+\newpage 
+\section{todo}
+% 例 4
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}a_{i}^{3}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{1}{a_{i}^{2}-a_{i+1}+n}\ge1,
+\end{equation}
+其中 $a_{n+1}=a_{1}$。
+\end{problem}
+
+
+% 例 5
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是给定的正实数，求证：存在和为 1 的正实数 $x_{1},x_{2},\dots,x_{n}$，使得对任意和为 1 的正实数 $y_{1},y_{2},\dots,y_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}x_{i}}{x_{i}+y_{i}}\ge\frac{1}{2}\sum_{i=1}^{n}a_{i}.
+\end{equation}
+\end{problem}
+
+
+% 例 6
+\begin{problem}{}{}
+设整数 $m<n$，$a_{1},a_{2},\dots,a_{n}$ 是正实数。对集合 $\{1,2,\dots,n\}$ 的子集 $A$，记 $S_{A}=\sum_{i\in A}a_{i}$。求证：
+\begin{equation}
+    \sum_{|A|=m}\frac{S_{A}}{S_{A^{c}}}\ge\frac{m}{n-m}C_{n}^{m}.
+\end{equation}
+\end{problem}
+
+
+% 例 7
+\begin{problem}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}\frac{1}{1+a_{i}}=\frac{n}{2}$。求证：
+\begin{equation}
+    \sum_{1\le i,j\le n}\frac{1}{a_{i}+a_{j}}\ge\frac{n^{2}}{2}.
+\end{equation}
+\end{problem}
+
+
+
+
+
+
+
+\subsection{作业题 (一)}
+
+% 作业 1
+\begin{problem}{作业题 1}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}b_{i}\right)^{2}\le\left(\sum_{i=1}^{n}\max\{a_{i}^{2},b_{i}^{2}\}\right)\left(\sum_{i=1}^{n}\min\{a_{i}^{2},b_{i}^{2}\}\right)\le\left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}b_{i}^{2}\right).
+\end{equation}
+\end{problem}
+
+
+% 作业 2
+\begin{problem}{作业题 2}{}
+给定整数 $n\ge3$。求最小的实数 $\lambda$，使得对任意正实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n-1}\frac{a_{i}}{S-a_{i}}+\frac{\lambda a_{n}}{S-a_{n}}\ge\frac{n-1}{n-2},
+\end{equation}
+其中 $S = a_1+a_2+\dots+a_n$。
+\end{problem}
+
+
+% 作业 3
+\begin{problem}{作业题 3}{}
+设整数 $n\ge2$，正实数 $a_{1}\ge a_{2}\ge\dots\ge a_{n}$。求证：
+\begin{equation}
+    \frac{a_{1}}{a_{1}+a_{2}}+\frac{a_{2}}{a_{2}+a_{3}}+\dots+\frac{a_{n}}{a_{n}+a_{1}}\ge\frac{n}{2}.
+\end{equation}
+\end{problem}
+
+
+
+
+\newpage 
+\section{柯西不等式 (二)}
+
+本节介绍柯西不等式与换元、待定系数、裂项等方法综合运用的问题。
+
+\subsection{换元法}
+
+% 例 1
+\begin{problem}{}{}
+给定正整数 $n$。设实数 $a_{1},a_{2},\dots,a_{2n}$ 满足 $\sum_{i=1}^{2n-1}(a_{i+1}-a_{i})^{2}=1$，求
+\begin{equation}
+    (a_{n+1}+a_{n+2}+\dots+a_{2n})-(a_{1}+a_{2}+\dots+a_{n})
+\end{equation}
+的最大值。
+\end{problem}
+
+
+% 例 2
+\begin{problem}{}{}
+设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=0$，求证：
+\begin{equation}
+    \max_{1\le k\le n}a_{k}^{2}\le\frac{n}{3}\sum_{i=1}^{n-1}(a_{i+1}-a_{i})^{2}.
+\end{equation}
+\end{problem}
+
+
+% 例 3
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \sum_{k=1}^{n}\sum_{j=1}^{k}\sum_{i=1}^{j}a_{i}\le 2\sum_{j=1}^{n}\frac{1}{a_{j}}\left(\sum_{i=1}^{j}a_{i}\right)^{2}.
+\end{equation}
+\end{problem}
+
+
+% 例 4
+\begin{problem}{}{}
+给定整数 $n\ge2$。设非负实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}^{2}+2\sum_{1\le i<j\le n}\sqrt{\frac{i}{j}}a_{i}a_{j}=1$，求 $\sum_{i=1}^{n}a_{i}$ 的最大值和最小值。
+\end{problem}
+
+
+\subsection{待定系数法}
+
+% 例 5
+\begin{problem}{Ostrowski 不等式}{}
+设实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n},x_{1},x_{2},\dots,x_{n}$ 满足 $\sum_{i=1}^{n}a_{i}x_{i}=0,\ \sum_{i=1}^{n}b_{i}x_{i}=1$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}x_{i}^{2}\ge\frac{\sum_{i=1}^{n}a_{i}^{2}}{(\sum_{i=1}^{n}a_{i}^{2})(\sum_{i=1}^{n}b_{i}^{2})-(\sum_{i=1}^{n}a_{i}b_{i})^{2}}.
+\end{equation}
+\end{problem}
+
+
+% 例 6
+\begin{problem}{}{}
+给定正整数 $n$。设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}ia_{i}=1$。求
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}^{2}+\sum_{1\le i<j\le n}a_{i}a_{j}
+\end{equation}
+的最小值。
+\end{problem}
+
+
+\subsection{裂项法}
+
+% 例 7
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求证：
+\begin{equation}
+    \frac{a_{1}}{1+a_{1}^{2}}+\frac{a_{2}}{1+a_{1}^{2}+a_{2}^{2}}+\dots+\frac{a_{n}}{1+a_{1}^{2}+\dots+a_{n}^{2}}<\sqrt{n}.
+\end{equation}
+\end{problem}
+
+
+% 例 8
+\begin{problem}{}{}
+设整数 $n\ge2$，正整数 $a_{1}<a_{2}<\dots<a_{n}$ 满足 $\sum_{i=1}^{n}\frac{1}{a_{i}}\le1$。求证：对任意实数 $x$，有
+\begin{equation}
+    \left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2}+x^{2}}\right)^{2}\le\frac{1}{2}\cdot\frac{1}{a_{1}(a_{1}-1)+x^{2}}.
+\end{equation}
+\end{problem}
+
+
+\subsection{作业题 (二)}
+
+% 作业 1
+\begin{problem}{作业题 1}{}
+设实数 $1=a_{1}\ge a_{2}\ge\dots\ge a_{n}\ge a_{n+1}=0$，求证：
+\begin{equation}
+    \sqrt{\sum_{i=1}^{n}a_{i}}\ge\sum_{i=1}^{n}\sqrt{i}(a_{i}-a_{i+1}).
+\end{equation}
+\end{problem}
+
+
+% 作业 2
+\begin{problem}{作业题 2}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{2n-1}$ 是实数，求证：
+\begin{equation}
+    (a_{1}+a_{3}+\dots+a_{2n-1})^{2}\le\sum_{1\le i\le j\le2n-1}(a_{i}+\dots+a_{j})^{2}.
+\end{equation}
+\end{problem}
+
+
+% 作业 3
+\begin{problem}{作业题 3}{}
+给定整数 $n\ge2$。求最小的实数 $\lambda$，使得对任意满足 $\sum_{i=1}^{n}ia_{i}=0$ 的实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)^{2}\le\lambda\sum_{i=1}^{n}a_{i}^{2}.
+\end{equation}
+\end{problem}
+
+
+% 作业 4
+\begin{problem}{作业题 4}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \frac{1}{1+a_{1}}+\frac{1}{1+a_{1}+a_{2}}+\dots+\frac{1}{1+a_{1}+\dots+a_{n}}<\sqrt{\frac{1}{a_{1}}+\frac{1}{a_{2}}+\dots+\frac{1}{a_{n}}}.
+\end{equation}
+\end{problem}
+
+
+\section{柯西不等式 (三)}
+
+本节介绍柯西不等式的两种推广和加强：拉格朗日恒等式与 Hölder 不等式，需要注意“平移不变”技巧的运用。
+
+\subsection{拉格朗日恒等式}
+
+% 例 1
+\begin{problem}{}{}
+给定整数 $n\ge2$。求最大的实数 $\lambda$，使得对任意实数 $a_{1},a_{2},\dots,a_{n}$，有
+\begin{equation}
+    \frac{a_{1}^{2}+a_{2}^{2}+\dots+a_{n}^{2}}{n}\ge\left(\frac{a_{1}+a_{2}+\dots+a_{n}}{n}\right)^{2}+\lambda(a_{1}-a_{n})^{2}.
+\end{equation}
+\end{problem}
+
+
+% 例 2
+\begin{problem}{}{}
+设 $a_{0},a_{1},\dots,a_{2n}$ 是实数，求证：
+\begin{equation}
+    \sum_{i=0}^{2n}a_{i}^{2}\ge\frac{1}{2n+1}\left(\sum_{i=0}^{2n}a_{i}\right)^{2}+\frac{3}{n(n+1)(2n+1)}\left(\sum_{i=0}^{2n}(i-n)a_{i}\right)^{2}.
+\end{equation}
+\end{problem}
+
+
+% 例 3
+\begin{problem}{}{}
+设整数 $n\ge4$，正实数 $a_{1},a_{2},\dots,a_{n}$ 和 $t$ 满足 $\sum_{i=1}^{n}a_{i}=3t,\ \sum_{i=1}^{n}a_{i}^{2}=3t^{2},\ \sum_{i=1}^{n}a_{i}^{3}>3t^{3}+t$。求证：存在 $1\le i<j\le n$ 使得 $|a_{i}-a_{j}|>1$。
+\end{problem}
+
+
+% 例 4
+\begin{problem}{}{}
+设整数 $n\ge3$。正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $(\sum_{i=1}^{n}a_{i})(\sum_{i=1}^{n}\frac{1}{a_{i}})=n^{2}+1$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2}}\right)\ge n^{2}+4+\frac{2}{n(n-1)}.
+\end{equation}
+\end{problem}
+
+
+% 例 5
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}^{2n}\right)\left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2n}}\right)-n^{2}\sum_{1\le i<j\le n}\left(\frac{a_{i}}{a_{j}}-\frac{a_{j}}{a_{i}}\right)^{2}\ge n^{2}.
+\end{equation}
+\end{problem}
+
+
+% 例 6
+\begin{problem}{}{}
+设 $a_{1},\dots, a_{2n}, b_{1}, \dots, b_{2n}$ 是实数，求证：
+\begin{equation}
+    \left(\sum_{i=1}^{2n}a_{i}^{2}\right)\left(\sum_{i=1}^{2n}b_{i}^{2}\right)-\left(\sum_{i=1}^{2n}a_{i}b_{i}\right)^{2}\ge\left[\sum_{i=1}^{n}(a_{i}b_{n+i}-a_{n+i}b_{i})\right]^{2}.
+\end{equation}
+\end{problem}
+
+
+\subsection{Hölder 不等式}
+
+% 例 7
+\begin{problem}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \prod_{i=1}^{n}(a_{i}^{3}+1)\ge\prod_{i=1}^{n}(a_{i}^{2}a_{i+1}+1),
+\end{equation}
+其中 $a_{n+1}=a_{1}$。
+\end{problem}
+
+
+% 例 8
+\begin{problem}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=1$。求证：
+\begin{equation}
+    (a_{1}a_{2}+a_{2}a_{3}+\dots+a_{n}a_{1})\left(\frac{a_{1}}{a_{2}^{2}+a_{2}}+\frac{a_{2}}{a_{3}^{2}+a_{3}}+\dots+\frac{a_{n}}{a_{1}^{2}+a_{1}}\right)\ge\frac{n}{n+1}.
+\end{equation}
+\end{problem}
+
+
+\subsection{作业题 (三)}
+
+% 作业 1
+\begin{problem}{作业题 1}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求证：
+\begin{equation}
+    \left(\sum_{1\le i<j\le n}|a_{i}-a_{j}|\right)^{2}\le\frac{n^{2}-1}{3}\sum_{1\le i<j\le n}(a_{i}-a_{j})^{2}.
+\end{equation}
+\end{problem}
+
+
+% 作业 2
+\begin{problem}{作业题 2}{}
+设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $a_{i}>b_{i}\ (i=1,2,\dots,n)$ 且 $\prod_{i=1}^{n}a_{i}b_{i}=1$。求证：
+\begin{equation}
+    \prod_{i=1}^{n}a_{i}-\prod_{i=1}^{n}b_{i}\ge n\sqrt[n]{\prod_{i=1}^{n}(a_{i}-b_{i})}.
+\end{equation}
+\end{problem}
+
+% 第 1 题
+\begin{problem}{}{}
+设 $a_i,b_i>0,\ i=1,2,\dots,n$，且 $a_1+a_2+\dots+a_n=b_1+b_2+\dots+b_n$，证明：
+\begin{equation}
+    \frac{a_1^2}{a_1+b_1}+\frac{a_2^2}{a_2+b_2}+\dots+\frac{a_n^2}{a_n+b_n} \ge\frac12(a_1+a_2+\dots+a_n)
+\end{equation}
+\end{problem}
+
+
+% 第 2 题
+\begin{problem}{2010 浙大自招}{}
+设整数 $n\ge 2$，且正实数 $x_1,x_2,\dots,x_n$ 满足 $x_1+x_2+\dots+x_n=1$，证明：
+\begin{equation}
+    \frac{1}{x_1-x_1^3}+\frac{1}{x_2-x_2^3}+\dots+\frac{1}{x_n-x_n^3}>4
+\end{equation}
+\end{problem}
+
+
+% 第 3 题
+\begin{problem}{2002 女奥 (CGMO)}{}
+设整数 $n\ge 2$，且 $P_1,P_2,\dots,P_n$ 是 $1,2,\dots,n$ 的任意排列，证明：
+\begin{equation}
+    \frac{1}{P_1+P_2}+\frac{1}{P_2+P_3}+\dots+\frac{1}{P_{n-1}+P_n}>\frac{n-1}{n+2}
+\end{equation}
+\end{problem}
+
+
+% 第 4 题
+\begin{problem}{2011 甘肃预赛}{}
+已知正实数 $a_1,a_2,\dots,a_n$ 满足 $a_1+a_2+\dots+a_n=1$，证明：
+\begin{equation}
+    \Bigl(a_1+\frac{1}{a_1}\Bigr)^2+\Bigl(a_2+\frac{1}{a_2}\Bigr)^2+\dots+\Bigl(a_n+\frac{1}{a_n}\Bigr)^2 \ge\frac{(n^2+1)^2}{n}
+\end{equation}
+\end{problem}
+
+
+% 第 5 题
+\begin{problem}{}{}
+给定整数 $n\ge 2$，非负实数 $a_1,a_2,\dots,a_n$ 满足 $\sum_{i=1}^n a_i=\sum_{i=1}^n a_i^3$，且 $a_{n+1}=a_1$，证明：
+\begin{equation}
+    \frac{1}{a_1^2-a_2+n}+\frac{1}{a_2^2-a_3+n}+\dots+\frac{1}{a_n^2-a_{n+1}+n}\ge 1
+\end{equation}
+\end{problem}
+
+
+% 第 6 题
+\begin{problem}{}{}
+设 $a_1,a_2,\dots,a_n$ 是实数，证明：
+\begin{equation}
+    \sqrt[3]{a_1^3+a_2^3+\dots+a_n^3} \le\sqrt{a_1^2+a_2^2+\dots+a_n^2}
+\end{equation}
+\end{problem}
+
+
+% 第 7 题
+\begin{problem}{}{}
+设 $n\ge 2,\ n\in\mathbb N^+$，证明：
+\begin{equation}
+    1\cdot\sqrt{C_n^1}+2\cdot\sqrt{C_n^2}+\dots+n\cdot\sqrt{C_n^n} <\sqrt{2^{n-1}\,n^3}
+\end{equation}
+\end{problem}
+
+
+% 第 8 题
+\begin{problem}{}{}
+设整数 $n\ge 3$，正实数 $a_1,a_2,\dots,a_n$ 满足 $a_n\ge a_1+a_2+\dots+a_{n-1}$，证明：
+\begin{equation}
+    \Bigl(\frac{1}{a_1}+\frac{1}{a_2}+\dots+\frac{1}{a_n}\Bigr)(a_1+a_2+\dots+a_n) \ge 2(n-1)^2+2
+\end{equation}
+\end{problem}
+
+
+% 第 9 题
+\begin{problem}{}{}
+已知正实数 $x_1,x_2,\dots,x_{n+1}$ 满足 $x_{n+1}=x_1+x_2+\dots+x_n$，证明：
+\begin{equation}
+    \Bigl(\sum_{i=1}^n\sqrt{x_i(x_{n+1}-x_i)}\Bigr)^2 \le(n-1)\,x_{n+1}^2
+\end{equation}
+\end{problem}
+
+
+% 第 10 题
+\begin{problem}{}{}
+已知 $a_1,a_2,\dots,a_n$ 为正实数，证明：
+\begin{equation}
+    \frac{(a_1+a_2+\dots+a_n)^2}{2(a_1^2+a_2^2+\dots+a_n^2)} \le\frac{a_1}{a_2+a_3}+\frac{a_2}{a_3+a_4}+\dots+\frac{a_n}{a_1+a_2}
+\end{equation}
+\end{problem}
+
+
+% 第 11 题
+\begin{problem}{}{}
+给定整数 $n\ge 2$，非负实数 $x_1,x_2,\dots,x_n$ 满足
+\begin{equation}
+    \sum_{i=1}^n x_i+\sum_{1\le i<j\le n}x_ix_j=n+C_n^2,
+\end{equation}
+其中 $C_a^b=\dfrac{a!}{b!(a-b)!}$。证明：$\sum_{i=1}^n x_i\ge n$。
+\end{problem}
+
+
+% 第 12 题
+\begin{problem}{2017 HMMT}{}
+设 $x_1,x_2,\dots,x_{2017}$ 均为实数，求出最大的实数 $c$，使得下列不等式成立：
+\begin{equation}
+    \sum_{i=1}^{2016}x_i(x_i+x_{i+1})\ge c\,x_{2017}^2
+\end{equation}
+\end{problem}
+
+
+% 第 13 题
+\begin{problem}{2019 欧洲杯}{}
+已知数列 $\{x_n\}$ 满足 $x_1=\sqrt2,\ x_{n+1}=x_n+\dfrac{1}{x_n}\ (n\in\mathbb N^+)$，证明：
+\begin{equation}
+    \sum_{k=1}^{2019}\frac{x_k^2}{2x_kx_{k+1}-1}> \frac{2019^2}{x_{2019}^2+\dfrac{1}{x_{2019}^2}}
+\end{equation}
+\end{problem}
+
+
+% 第 14 题
+\begin{problem}{}{}
+已知正实数 $x_1,x_2,\dots,x_n$ 满足 $x_1+x_2+\dots+x_n=1$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{(n-1)\sum_{j\ne i}x_j^2+x_i}{1+\sum_{j\ne i}x_j} \ge\frac{n^2-n+1}{2n-1}
+\end{equation}
+\end{problem}
+
+
+% 第 15 题
+\begin{problem}{1996 波兰}{}
+设整数 $n\ge 2$，正数 $a_1,\dots,a_n,x_1,\dots,x_n$ 满足 $\sum_{i=1}^n a_i=1,\ \sum_{i=1}^n x_i=1$，证明：
+\begin{equation}
+    2\sum_{1\le i<j\le n}x_ix_j\le\frac{n-2}{n-1}+\sum_{i=1}^n\frac{a_ix_i^2}{1-a_i},
+\end{equation}
+并指出等号成立的充要条件。
+\end{problem}
+
+
+% 第 16 题
+\begin{problem}{}{}
+设 $a_i>0,\,b_i>0,\ a_ib_i=c_i^2+d_i^2\ (i=1,2,\dots,n)$，证明：
+\begin{equation}
+    \sum_{i=1}^n a_i\cdot\sum_{i=1}^n b_i \ge\Bigl(\sum_{i=1}^n c_i\Bigr)^2+\Bigl(\sum_{i=1}^n d_i\Bigr)^2
+\end{equation}
+\end{problem}
+
+
+% 第 17 题
+\begin{problem}{2002 罗马尼亚}{}
+设整数 $n\ge 4$，正实数 $a_1,a_2,\dots,a_n$ 满足 $a_1^2+a_2^2+\dots+a_n^2=1$，求证：
+\begin{equation}
+    \frac{a_1}{a_2^2+1}+\frac{a_2}{a_3^2+1}+\dots+\frac{a_n}{a_1^2+1} \ge\frac45\Bigl(a_1\sqrt{a_1}+a_2\sqrt{a_2}+\dots+a_n\sqrt{a_n}\Bigr)^2
+\end{equation}
+\end{problem}
+
+
+% 第 18 题
+\begin{problem}{1998 罗马尼亚}{}
+已知正实数 $x_1,x_2,\dots,x_n$ 满足 $x_1x_2\dots x_n=1$，证明：
+\begin{equation}
+    \frac{1}{n-1+x_1}+\frac{1}{n-1+x_2}+\dots+\frac{1}{n-1+x_n}\le 1
+\end{equation}
+\end{problem}
+
+
+% 第 19 题
+\begin{problem}{2014 东南}{}
+设整数 $n\ge 2$，正实数 $x_1,x_2,\dots,x_n$ 满足 $x_1+\dots+x_n=1$，且 $x_{n+1}=x_1$，求证：
+\begin{equation}
+    \frac{x_1}{x_2-x_2^3}+\frac{x_2}{x_3-x_3^3}+\dots+\frac{x_n}{x_{n+1}-x_{n+1}^3} \ge\frac{n^3}{n^2-1}
+\end{equation}
+\end{problem}
+
+
+
+
+
+% 第 22 题
+\begin{problem}{2010 伊朗改}{}
+设 $a_1,a_2,\dots,a_n$ 是正实数，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{1}{a_i^2}+\frac{1}{(a_1+a_2+\dots+a_n)^2} \ge\frac{n^3+1}{(n^2+1)^2}\Bigl(\sum_{i=1}^n\frac{1}{a_i}+\frac{1}{a_1+a_2+\dots+a_n}\Bigr)^2
+\end{equation}
+\end{problem}
+
+
+% 第 23 题
+\begin{problem}{}{}
+设 $x_1,x_2,\dots,x_n$ 是正实数，且 $x_{n+1}=x_1$，证明：
+\begin{equation}
+    \frac{x_1^2}{x_2}+\frac{x_2^2}{x_3}+\dots+\frac{x_n^2}{x_{n+1}} \ge(x_1+x_2+\dots+x_n)+\frac{4(x_1-x_n)^2}{x_1+x_2+\dots+x_n}
+\end{equation}
+\end{problem}

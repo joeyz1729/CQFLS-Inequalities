@@ -1,0 +1,293 @@
+    % chapters/07_comprehensive_1.tex
+
+\chapter{综合练习 1}
+
+% 第 1 题
+\begin{problem}{2018 俄罗斯}{}
+给定正实数 $x_1,x_2,\dots,x_n$，其中整数 $n\ge 2$，证明：
+\begin{equation}
+    \frac{1+x_1^2}{1+x_1x_2}+\frac{1+x_2^2}{1+x_2x_3}+\dots+\frac{1+x_n^2}{1+x_nx_1}\ge n
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 2 题
+\begin{problem}{}{}
+给定正实数 $a_1,a_2,\dots,a_n$，其中整数 $n\ge 2$，证明：
+\begin{equation}
+    \frac{a_1^2+1}{a_1a_2+1}+\frac{a_2^2+1}{a_2a_3+1}+\dots+\frac{a_n^2+1}{a_na_1+1} \le\frac{a_1}{a_2}+\frac{a_2}{a_3}+\dots+\frac{a_n}{a_1}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 3 题
+\begin{problem}{2016 新加坡}{}
+设 $a_1,a_2,\dots,a_n$ 为正实数，且 $a_{n+1}=a_1$，证明：
+\begin{equation}
+    \frac{a_2}{a_1}+\frac{a_3}{a_2}+\dots+\frac{a_{n+1}}{a_n} \ge\sqrt{\frac{1+a_2^2}{1+a_1^2}}+\sqrt{\frac{1+a_3^2}{1+a_2^2}}+\dots+\sqrt{\frac{1+a_{n+1}^2}{1+a_n^2}}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 4 题
+\begin{problem}{}{}
+设正实数 $a_1,a_2,\dots,a_n$ 满足 $a_1+a_2+\dots+a_n=1$，证明：
+\begin{equation}
+    \frac{a_1}{a_2}+\frac{a_2}{a_3}+\dots+\frac{a_n}{a_1} \ge\frac{1-a_2}{1-a_1}+\frac{1-a_3}{1-a_2}+\dots+\frac{1-a_1}{1-a_n}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 5 题
+\begin{problem}{}{}
+设整数 $n\ge 3$，证明：对于正实数 $x_1\le x_2\le\dots\le x_n$，有
+\begin{equation}
+    \frac{x_1x_2}{x_3}+\frac{x_2x_3}{x_4}+\dots+\frac{x_{n-1}x_n}{x_1}+\frac{x_nx_1}{x_2} \ge x_1+x_2+\dots+x_n
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 6 题
+\begin{problem}{}{}
+已知正实数 $a_1,a_2,\dots,a_n$ 满足 $a_1+a_2+\dots+a_n=1$，记
+\[
+b_k=\frac{a_k}{a_k^2+a_ka_{k+1}+a_{k+1}^2},\quad k=1,2,\dots,n,
+\]
+其中 $a_{n+1}=a_1$，证明：
+\begin{equation}
+    (a_1^4+a_2^4+\dots+a_n^4)(b_1^2+b_2^2+\dots+b_n^2)\ge\frac19
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 7 题
+\begin{problem}{}{}
+设正整数 $n\ge 2$，且 $a_1,a_2,\dots,a_n,b_1,b_2,\dots,b_n$ 是正实数，证明：
+\begin{equation}
+    \sum_{k=1}^n\frac{a_k}{\sum_{\substack{1\le j\le n\\ j\ne k}}a_jb_j} \ge\frac{4}{b_1+b_2+\dots+b_n}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 8 题
+\begin{problem}{}{}
+已知 $a_1,a_2,\dots,a_n$ 为正实数，证明：
+\begin{equation}
+    \frac{1}{1+a_1}+\frac{2}{1+a_1+a_2}+\dots+\frac{n}{1+a_1+a_2+\dots+a_n} \le\frac{n}{2}\sqrt{\frac{1}{a_1}+\frac{1}{a_2}+\dots+\frac{1}{a_n}}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 9 题
+\begin{problem}{}{}
+已知实数 $a_1,a_2,\dots,a_n$ 满足 $0\le a_i\le 1\ (i=1,2,\dots,n)$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{a_i}{1+\sum_{\substack{j=1\\ j\ne i}}^n a_j}+\prod_{i=1}^n(1-a_i)\le 1
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 10 题
+\begin{problem}{}{}
+设 $a_1,a_2,\dots,a_n$ 均大于 1，且 $x_0,x_1,\dots,x_n$ 满足 $x_0=1,\ x_k=\dfrac{1}{1+a_kx_{k-1}}\ (1\le k\le n)$，证明：
+\begin{equation}
+    \sum_{k=1}^n x_k>\frac{n^2\bigl(1+\sum_{k=1}^n a_k\bigr)}{n^2+\bigl(1+\sum_{k=1}^n a_k\bigr)^2}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 11 题
+\begin{problem}{2017 女奥 (CGMO)}{}
+设 $a_i\ge 0,\ x_i\in\mathbb R,\ i=1,2,\dots,n$，证明：
+\begin{equation}
+    \Bigl[\Bigl(1-\sum_{i=1}^n a_i\cos x_i\Bigr)^2+\Bigl(1-\sum_{i=1}^n a_i\sin x_i\Bigr)^2\Bigr]^2 \ge 4\Bigl(1-\sum_{i=1}^n a_i\Bigr)^3
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 12 题
+\begin{problem}{}{}
+设 $n$ 为正整数，实数 $a_1,a_2,\dots,a_n$ 满足 $\sum_{i=1}^n a_i^2=1$，证明：
+\begin{equation}
+    \sum_{1\le i\cdot j \le n}a_ia_j<2\sqrt{n}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 13 题
+\begin{problem}{1999 CTST}{}
+设 $x_0,x_1,x_2,\dots,x_{2n}$ 是实数，证明：
+\begin{equation}
+    \sum_{i=0}^{2n}x_i^2 \ge\frac{1}{2n+1}\Bigl(\sum_{i=0}^{2n}x_i\Bigr)^2 +\frac{3}{n(n+1)(2n+1)}\Bigl(\sum_{i=0}^{2n}(i-n)x_i\Bigr)^2
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 14 题
+\begin{problem}{}{}
+设正整数 $n\ge 2$，$a_1,a_2,\dots,a_n$ 是实数，证明：
+\begin{equation}
+    \frac{3}{n^2-1}\Bigl[\sum_{k=1}^n(2k-n-1)a_k\Bigr]^2 +\Bigl(\sum_{k=1}^n a_k\Bigr)^2 \le n\sum_{k=1}^n a_k^2
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 15 题
+\begin{problem}{}{}
+给定正整数 $n$，设正实数 $a_1,a_2,\dots,a_n$ 满足
+\begin{equation}
+    \sum_{i=1}^n a_i=\frac{2}{n-1}\sum_{1\le i<j\le n}a_ia_j,
+\end{equation}
+记 $x_i=\sum_{j=1}^n a_j-a_i\ (1\le i\le n)$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{1}{1+x_i}\le 1
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 16 题
+\begin{problem}{2019 浙江预赛}{}
+设 $a_i,b_i>0\ (1\le i\le n+1)$，$b_{i+1}-b_i\ge\delta>0$（$\delta$ 为常数），若 $\sum_{i=1}^n a_i=1$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{i\,\sqrt[i]{a_1a_2\dotsm a_ib_1b_2\dotsm b_i}}{b_ib_{i+1}} <\frac{1}{\delta}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 17 题
+\begin{problem}{}{}
+设 $x_1,x_2,\dots,x_n$ 为非负实数，证明
+\begin{equation}
+    \frac{x_1}{\left(1+x_1+x_2+\cdots+x_n\right)^2}+\frac{x_2}{\left(1+x_2+x_3+\cdots+x_n\right)^2}+\cdots+\frac{x_n}{\left(1+x_n\right)^2} \leq k_n^2
+\end{equation}
+其中数列 $\{k_n\}$ 满足 $k_1=\frac12,\ k_{n+1}=\dfrac{k_n^2+1}{2}$。
+\end{problem}
+\newpage
+
+% 第 18 题
+\begin{problem}{}{}
+设正整数 $n\ge 2$，正实数 $x_1,x_2,\dots,x_n$ 满足 $\sum_{k=1}^n x_k\cdot\sum_{k=1}^n\dfrac{1}{x_k}=n^2+1$，证明：
+\begin{equation}
+    \sum_{k=1}^n x_k^2\cdot\sum_{k=1}^n\frac{1}{x_k^2} >n^2+4+\frac{2}{n(n-1)}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 19 题
+\begin{problem}{}{}
+已知 $a_1,a_2,\dots,a_n$ 是正实数，且 $n\ge 3,\ S=\sum_{i=1}^n a_i$，证明：
+\begin{equation}
+    \sum_{i=1}^n\Bigl[\frac{a_i}{S-a_i}+\sqrt[n-1]{\Bigl(\frac{(n-1)a_i}{S-a_i}\Bigr)^{n-2}}\Bigr] \ge\frac{n^2}{n-1}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 20 题
+\begin{problem}{2011 西班牙 (改编)}{}
+已知 $a_1,a_2,\dots,a_n$ 是正实数，且 $n\ge 3$，设 $S=\sum_{i=1}^n a_i$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{a_i}{S-a_i}+\frac{2}{n-1}\sqrt{\frac{\sum_{1\le i<j\le n}2a_ia_j}{(n-1)\sum_{i=1}^n a_i^2}} \ge\frac{n+2}{n-1}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 21 题
+\begin{problem}{2010 地中海数学竞赛}{}
+已知 $n>2$，正实数 $a_1,a_2,\dots,a_n$ 满足 $a_1+a_2+\dots+a_n=1$，证明：
+\begin{equation}
+    \frac{a_2a_3\dotsm a_n}{a_1+n-2}+\frac{a_1a_3\dotsm a_n}{a_2+n-2}+\dots+\frac{a_1a_2\dotsm a_{n-1}}{a_n+n-2} \le\frac{1}{(n-1)^2}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 22 题
+\begin{problem}{}{}
+已知 $a_1,a_2,\dots,a_n$ 是正实数，且 $n\ge 3$，设 $S=\sum_{i=1}^n a_i^2$，证明：
+\begin{equation}
+    \Bigl(\sum_{i=1}^n a_i\Bigr)^2\sum_{i=1}^n\frac{1}{S+a_i^2} \le\frac{n^3}{n+1}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 23 题
+\begin{problem}{}{}
+已知实数 $a_1,a_2,\dots,a_n$ 满足 $\sum_{i=1}^n a_i=0$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{(a_i+1)^2}{a_i^2+n-1} \ge\frac{n}{n-1}
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 24 题
+\begin{problem}{}{}
+已知实数 $x_1,x_2,\dots,x_n$ 满足 $\sum_{i=1}^n x_i=0$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{(n-2)x_i^2+2x_i}{(n-1)x_i^2+1} \ge 0
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 25 题
+\begin{problem}{1986 苏联}{}
+设 $a_1,a_2,\dots,a_n$ 均为正实数，证明：
+\begin{equation}
+    \frac{1}{a_1}+\frac{2}{a_1+a_2}+\dots+\frac{n}{a_1+a_2+\dots+a_n} <4\Bigl(\frac{1}{a_1}+\frac{1}{a_2}+\dots+\frac{1}{a_n}\Bigr)
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 26 题
+\begin{problem}{}{}
+设 $x_1,x_2,\dots,x_n$ 为非负实数，证明：
+\begin{equation}
+    \sum_{k=1}^n\Bigl(\frac{x_1+x_2+\dots+x_k}{k}\Bigr)^2 \le\sum_{k=1}^n(k+1)x_k^2
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 27 题
+\begin{problem}{2005 韩国}{}
+设 $x_1,x_2,\dots,x_n$ 为非负实数，证明：
+\begin{equation}
+    \sum_{k=1}^n\Bigl(\frac{x_1+x_2+\dots+x_k}{k}\Bigr)^2 \le 4\sum_{k=1}^n x_k^2
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 28 题
+\begin{problem}{}{}
+设 $0<x_n<x_{n-1}<\dots<x_1<x_0<1$，证明：
+\begin{equation}
+    \sum_{i=1}^n\frac{x_i^2}{x_{i-1}-x_i} >\frac12\sum_{i=1}^n i x_i-1
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 29 题
+\begin{problem}{}{}
+给定实数 $p_1,p_2,\dots,p_n$，对于满足 $p_1x_1+p_2x_2+\dots+p_nx_n=1$ 的实数 $x_1,x_2,\dots,x_n$，记
+\begin{equation}
+    P=\sum_{i=1}^n x_i^2+\Bigl(\sum_{i=1}^n x_i\Bigr)^2,
+\end{equation}
+求 $P$ 的最小值，并给出相应的取等条件。
+\end{problem}
+\newpage
+
+% 第 30 题
+\begin{problem}{}{}
+设 $x_1,x_2,\dots,x_n$ 为正实数，证明：
+\begin{equation}
+    \sum_{i=1}^n x_i^2 \ge\frac{1}{n+1}\Bigl(\sum_{i=1}^n x_i\Bigr)^2 +\frac{12}{n(n+1)(n+2)(3n+1)}\Bigl(\sum_{i=1}^n i x_i\Bigr)^2
+\end{equation}
+\end{problem}
+\newpage
+
+% 第 31 题
+\begin{problem}{}{}
+给定整数 $n\ge 3$，求最大的实数 $\lambda$，使得只要正实数 $a_1,a_2,\dots,a_n$ 满足
+\[
+a_1^2+a_2^2+\dots+a_n^2<\lambda\,(a_1+a_2+\dots+a_n)^2,
+\]
+就有 $a_1,a_2,\dots,a_n$ 中任意三个数均可作为某个三角形的边长。
+\end{problem}
+\newpage

@@ -1,0 +1,190 @@
+% chapters/13_reverse_ineq.tex
+
+\chapter{反向不等式}
+\section{基础知识}
+\begin{thm}{Kantorović 不等式}{}
+设整数 $n\ge2$，正实数 $\lambda_{1},\lambda_{2},\dots,\lambda_{n}$ 满足 $\sum_{i=1}^{n}\lambda_{i}=1$。设正实数 $m<M$，实数 $a_{1},a_{2},\dots,a_{n}\in[m,M]$，则
+\begin{equation}
+    \left(\sum_{i=1}^{n}\lambda_{i}a_{i}\right)\left(\sum_{i=1}^{n}\frac{\lambda_{i}}{a_{i}}\right)\le\frac{(M+m)^{2}}{4Mm}.
+\end{equation}
+\end{thm}
+\newpage
+
+
+\begin{thm}{Polyá-Szegö 不等式}{}
+设整数 $n\ge2$，正实数 $a<A,\ b<B$，实数 $a_{1},a_{2},\dots,a_{n}\in[a,A],\ b_{1},b_{2},\dots,b_{n}\in[b,B]$。则
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}b_{i}^{2}\right)\le\frac{1}{4}\left(\sqrt{\frac{AB}{ab}}+\sqrt{\frac{ab}{AB}}\right)^{2}\left(\sum_{i=1}^{n}a_{i}b_{i}\right)^{2}.
+\end{equation}
+\end{thm}
+\newpage
+
+
+\section{预习题}
+
+
+\section{例题}
+% example 69
+\begin{example}{1978 苏联}{}
+设 $x_1, x_2, \dots, x_n \in [a, b]$，其中 $0 < a < b$，证明：
+\begin{equation}
+    (x_1 + x_2 + \dots + x_n) \cdot \left( \frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_n} \right) \le \frac{(a+b)^2}{4ab} \cdot n^2
+\end{equation}
+\end{example}
+\newpage
+
+
+% example 67
+\begin{example}{2016 克罗地亚}{}
+已知 $x_1, x_2, \dots, x_n$ 均为非负实数，证明：
+\begin{equation}
+    \left( x_1 + \frac{x_2}{2} + \dots + \frac{x_n}{n} \right) \cdot \left( x_1 + 2x_2 + \dots + nx_n \right) \le \frac{(n+1)^2}{4n} \cdot (x_1 + x_2 + \dots + x_n)^2
+\end{equation}
+\end{example}
+\newpage
+
+% 作业题 3
+\begin{example}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足
+\begin{equation}
+    (a_{1}+a_{2}+\dots+a_{n})\left(\frac{1}{a_{1}}+\frac{1}{a_{2}}+\dots+\frac{1}{a_{n}}\right)\le\left(n+\frac{1}{2}\right)^{2}.
+\end{equation}
+求证：$\max\{a_{1},\dots,a_{n}\}\le4 \min\{a_{1},\dots,a_{n}\}$。
+\end{example}
+\newpage
+
+ 
+% 例 3
+\begin{example}{}{}
+给定整数 $n\ge2$。设实数 $a_{1},a_{2},\dots,a_{n}\in[1,2]$，求
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)\left(\sum_{i=1}^{n}\frac{1}{a_{i}}\right)^{2}
+\end{equation}
+的最大值。
+\end{example}
+\newpage
+
+% 例 4
+\begin{example}{1998年高中联赛}{}
+设整数 $n\ge2$，实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}\in[1,2]$ 且满足 $\sum_{i=1}^{n}a_{i}^{2}=\sum_{i=1}^{n}b_{i}^{2}$。
+求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}^{3}}{b_{i}}\le\frac{17}{10}\sum_{i=1}^{n}a_{i}^{2}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 5
+\begin{example}{}{}
+设整数 $n\ge3$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足
+\begin{equation}
+    (a_{1}+a_{2}+\dots+a_{n})\left(\frac{1}{a_{1}}+\frac{1}{a_{2}}+\dots+\frac{1}{a_{n}}\right)<n^{2}+1.
+\end{equation}
+求证：$a_{1},a_{2},\dots,a_{n}$ 中任意三个数均能构成三角形的三边长。
+\end{example}
+\newpage
+
+
+
+
+
+
+% 例 8
+\begin{example}{}{}
+设整数 $n\ge2$，正实数 $a<b$，实数 $a_{1},a_{2},\dots,a_{n}\in[a,b]$。求证：
+\begin{equation}
+    \frac{a_{1}+a_{2}+\dots+a_{n}}{n\sqrt[n]{a_{1}a_{2}\dots a_{n}}}\le\left(\frac{M}{2}\right)^{2-\frac{2}{n}},
+\end{equation}
+其中 $M=\sqrt{\frac{a}{b}}+\sqrt{\frac{b}{a}}$。
+\end{example}
+\newpage
+
+% 例 9
+\begin{example}{}{}
+给定整数 $n\ge2$。求最小的实数 $\lambda$，使得对任意正实数 $a_{1},a_{2},\dots,a_{n}$ 都有
+\begin{equation}
+    \sqrt[n]{\prod_{i=1}^{n}a_{i}}+\lambda\sum_{1\le i<j\le n}|a_{i}-a_{j}|\ge\frac{1}{n}\sum_{i=1}^{n}a_{i}.
+\end{equation}
+\end{example}
+\newpage
+
+
+
+
+
+
+
+\section{练习题}
+
+
+
+% example 68
+\begin{problem}{}{}
+已知非负实数 $a_1, a_2, \dots, a_n$ 满足 $a_1 + a_2 + \dots + a_n = 1$，其中 $n \ge 3$，求 
+\begin{equation}
+    \sum_{i=1}^n i a_i \cdot (\sum_{i=1}^n \frac{a_i}{i})^2
+\end{equation}
+的最大值。
+\end{problem}
+
+
+
+% example 70
+\begin{problem}{}{}
+已知非负实数 $x_1, x_2, \dots, x_n$ 满足 $\sum_{i=1}^n x_i = 1$，证明：
+\begin{equation}
+    1 \le \sum_{i=1}^n (2i-1)x_i \cdot \sum_{i=1}^n \frac{x_i}{2i-1} \le \frac{n^2}{2n-1}
+\end{equation}
+\end{problem}
+
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}\le a_{2}\le\dots\le a_{n}$，且 $a_{1}\ge\frac{a_{2}}{2}\ge\dots\ge\frac{a_{n}}{n}$。
+求证：
+\begin{equation}
+    \frac{a_{1}+a_{2}+\dots+a_{n}}{n\sqrt[n]{a_{1}a_{2}\dots a_{n}}}\le\frac{n+1}{2\sqrt[n]{n!}}.
+\end{equation}
+\end{problem}
+% 作业题 1
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $\lambda_{1},\lambda_{2},\dots,\lambda_{n}$ 满足 $\sum_{i=1}^{n}\lambda_{i}=1$。设正实数 $m<M$，实数 $a_{1},a_{2},\dots,a_{n}\in[m,M]$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\lambda_{i}a_{i}-\frac{1}{\sum_{i=1}^{n}\frac{\lambda_{i}}{a_{i}}}\le(\sqrt{M}-\sqrt{m})^{2}.
+\end{equation}
+\end{problem}
+% 例 7
+
+
+% 作业题 2
+\begin{problem}{}{}
+设整数 $n\ge2$，正实数 $m<M$，实数 $a_{1},a_{2},\dots,a_{n}\in[m,M]$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}^{2}}{a_{i+1}}\le\frac{M^{2}-Mm+m^{2}}{Mm}\sum_{i=1}^{n}a_{i},
+\end{equation}
+其中 $a_{n+1}=a_{1}$。
+\end{problem}
+
+% 例 6
+\begin{problem}{}{}
+设整数 $n\ge3$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足
+\begin{equation}
+    (n-1)(a_{1}^{4}+a_{2}^{4}+\dots+a_{n}^{4})<(a_{1}^{2}+a_{2}^{2}+\dots+a_{n}^{2})^{2}.
+\end{equation}
+求证：$a_{1},a_{2},\dots,a_{n}$ 中任意三个数均能构成三角形的三边长。
+\end{problem}
+
+% 作业题 4
+\begin{problem}{}{}
+给定整数 $n\ge3$。求最大的实数 $\lambda$，使得只要正实数 $a_{1},a_{2},\dots,a_{n}$ 满足
+\begin{equation}
+    a_{1}^{2}+a_{2}^{2}+\dots+a_{n}^{2}<\lambda(a_{1}+a_{2}+\dots+a_{n})^{2},
+\end{equation}
+那么 $a_{1},a_{2},\dots,a_{n}$ 中任意三个数便能构成三角形的三边长。
+\end{problem}
+
+% 例 10
+\begin{problem}{}{}
+给定整数 $n\ge2$。求最小的实数 $\lambda$，使得对任意实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \left|\sum_{i=1}^{n}a_{i}\right|+\lambda\sum_{1\le i<j\le n}|a_{i}-a_{j}|\ge\sum_{i=1}^{n}|a_{i}|.
+\end{equation}
+\end{problem}
