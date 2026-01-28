@@ -1,0 +1,145 @@
+\chapter{柯西不等式 (一)}
+柯西不等式 (Cauchy-Schwarz Inequality) 是现代数学各个分支中应用最为广泛的不等式之一。本讲将系统介绍柯西不等式的多种形式、证明技巧（如换元、待定系数、裂项）以及相关的推广（如拉格朗日恒等式、Hölder 不等式）。
+
+本节介绍柯西不等式的几种形式，以及在证明分式不等式中的应用。
+
+\begin{thm}{柯西不等式}{}
+\end{thm}
+
+\vspace{5cm}
+\begin{thm}{积分形式}{}
+设 $f,g$ 是区间 $[a,b]$ 上的可积函数，求证：
+\begin{equation}
+    \left(\int_{a}^{b}f(x)^{2}dx\right)\left(\int_{a}^{b}g(x)^{2}dx\right)\ge\left(\int_{a}^{b}f(x)g(x)dx\right)^{2}.
+\end{equation}
+\end{thm}
+
+
+
+
+\newpage 
+% 例 2
+\begin{thm}{Wagner 不等式}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，$x\in[0,1]$。求证：
+\begin{equation}
+    \left(\sum_{k=1}^{n}a_{k}^{2}+2x\sum_{1\le i<j\le n}a_{i}a_{j}\right)\left(\sum_{k=1}^{n}b_{k}^{2}+2x\sum_{1\le i<j\le n}b_{i}b_{j}\right)\ge\left(\sum_{k=1}^{n}a_{k}b_{k}+x\sum_{i\ne j}a_{i}b_{j}\right)^{2}.
+\end{equation}
+\end{thm}
+
+\newpage 
+% 例 3
+\begin{thm}{Aczel 不等式}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，满足 $a_{1}^{2}>\sum_{i=2}^{n}a_{i}^{2}$。求证：
+\begin{equation}
+    \left(a_{1}^{2}-\sum_{i=2}^{n}a_{i}^{2}\right)\left(b_{1}^{2}-\sum_{i=2}^{n}b_{i}^{2}\right)\le\left(a_{1}b_{1}-\sum_{i=2}^{n}a_{i}b_{i}\right)^{2}.
+\end{equation}
+\end{thm}
+
+\newpage 
+\section{分式型柯西不等式}
+
+% 例 4
+\begin{example}{}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}a_{i}^{3}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{1}{a_{i}^{2}-a_{i+1}+n}\ge1,
+\end{equation}
+其中 $a_{n+1}=a_{1}$。
+\end{example}
+\newpage
+
+% 例 5
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是给定的正实数，求证：存在和为 1 的正实数 $x_{1},x_{2},\dots,x_{n}$，使得对任意和为 1 的正实数 $y_{1},y_{2},\dots,y_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n}\frac{a_{i}x_{i}}{x_{i}+y_{i}}\ge\frac{1}{2}\sum_{i=1}^{n}a_{i}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 6
+\begin{example}{}{}
+设整数 $m<n$，$a_{1},a_{2},\dots,a_{n}$ 是正实数。对集合 $\{1,2,\dots,n\}$ 的子集 $A$，记 $S_{A}=\sum_{i\in A}a_{i}$。求证：
+\begin{equation}
+    \sum_{|A|=m}\frac{S_{A}}{S_{A^{c}}}\ge\frac{m}{n-m}C_{n}^{m}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 7
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}\frac{1}{1+a_{i}}=\frac{n}{2}$。求证：
+\begin{equation}
+    \sum_{1\le i,j\le n}\frac{1}{a_{i}+a_{j}}\ge\frac{n^{2}}{2}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 8
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\frac{2}{n-1}\sum_{1\le i<j\le n}a_{i}a_{j}$。
+对 $1\le i\le n$，记 $x_{i}=\sum_{j=1}^{n}a_{j}-a_{i}$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}\frac{1}{1+x_{i}}\le1.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 9
+\begin{example}{2006 CTST}{}
+设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=1$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}\sqrt{a_{i}}\right)\left(\sum_{i=1}^{n}\frac{1}{\sqrt{1+a_{i}}}\right)\le\frac{n^{2}}{\sqrt{n+1}}.
+\end{equation}
+\end{example}
+
+
+
+
+\newpage
+\section{作业题}
+
+% 作业 1
+\begin{homework}{}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}b_{i}\right)^{2}\le\left(\sum_{i=1}^{n}\max\{a_{i}^{2},b_{i}^{2}\}\right)\left(\sum_{i=1}^{n}\min\{a_{i}^{2},b_{i}^{2}\}\right)\le\left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}b_{i}^{2}\right).
+\end{equation}
+\end{homework}
+\newpage
+
+% 作业 2
+\begin{homework}{}{}
+给定整数 $n\ge3$。求最小的实数 $\lambda$，使得对任意正实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n-1}\frac{a_{i}}{S-a_{i}}+\frac{\lambda a_{n}}{S-a_{n}}\ge\frac{n-1}{n-2},
+\end{equation}
+其中 $S = a_1+a_2+\dots+a_n$。
+\end{homework}
+\newpage
+
+% 作业 3
+\begin{homework}{}{}
+设整数 $n\ge2$，正实数 $a_{1}\ge a_{2}\ge\dots\ge a_{n}$。求证：
+\begin{equation}
+    \frac{a_{1}}{a_{1}+a_{2}}+\frac{a_{2}}{a_{2}+a_{3}}+\dots+\frac{a_{n}}{a_{n}+a_{1}}\ge\frac{n}{2}.
+\end{equation}
+\end{homework}
+\newpage
+
+% 作业 4
+\begin{homework}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}^{2}=n$。求证：
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)^{2}\left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2}+1}\right)\le\frac{n^{3}}{2}.
+\end{equation}
+\end{homework}
+
+
+% % 第 20 题
+% \begin{problem}{}{}
+% 已知正实数 $x_1,x_2,\dots,x_n$ 满足 $\sum_{i=1}^n x_i=1$，证明：
+% \begin{equation}
+%     \Bigl(\sum_{i=1}^n\sqrt{x_i}\Bigr)^2\cdot\sum_{i=1}^n\frac{1}{1+x_i} \le\frac{n^3}{n+1}
+% \end{equation}
+% \end{problem}

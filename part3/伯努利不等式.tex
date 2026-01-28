@@ -1,0 +1,130 @@
+% chapters/14_bernoulli.tex
+
+\chapter{伯努利不等式}
+\section{基础知识}
+
+% \begin{thm}{伯努利不等式 (Bernoulli's Inequality)}{bernoulli_basic}
+% 对任意实数 $x > -1$ 和整数 $n \ge 0$，有：
+% \begin{equation}
+%     (1+x)^n \ge 1+nx
+% \end{equation}
+% 当且仅当 $n=0, 1$ 或 $x=0$ 时取等号。
+% \end{thm}
+% % \vspace{2cm}
+
+\begin{thm}{伯努利不等式 (Bernoulli's Inequality)}{bernoulli_gen}
+对任意实数 $x > -1$ 和实数 $\alpha$，有：
+\begin{enumerate}
+    \item 当 $\alpha \in (-\infty, 0] \cup [1, +\infty)$ 时：
+    \begin{equation}
+        (1+x)^\alpha \ge 1+\alpha x
+    \end{equation}
+    \item 当 $\alpha \in (0, 1)$ 时：
+    \begin{equation}
+        (1+x)^\alpha \le 1+\alpha x
+    \end{equation}
+\end{enumerate}
+当且仅当 $\alpha = 0, 1$ 或 $x=0$ 时取等号。
+\end{thm}
+\vspace{2.5cm}
+
+\begin{thm}{伯努利不等式的多变量形式}{}
+设 $x_1, x_2, \dots, x_n$ 为符号相同的实数，且 $x_i > -1$，则：
+\begin{equation}
+    (1+x_1)(1+x_2)\cdots(1+x_n) \ge 1 + x_1 + x_2 + \dots + x_n
+\end{equation}
+\end{thm}
+\vspace{2.5cm}
+% === 例题部分 ===
+
+\newpage  
+\section{例题}
+% 例 1
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}\le1$，求证：
+\begin{equation}
+    (1+a_{1})^{\frac{1}{a_{2}}}(1+a_{2})^{\frac{1}{a_{3}}}\dots(1+a_{n})^{\frac{1}{a_{1}}}\ge2^{n}.
+\end{equation}
+\end{example}
+\newpage
+
+
+
+% 例 3
+\begin{example}{}{}
+设实数 $a_{1},a_{2},\dots,a_{n}\ge1$，求证：
+\begin{equation}
+    (1+a_{1})(1+a_{2})\dots(1+a_{n})\ge\frac{2^{n}}{n+1}(1+a_{1}+a_{2}+\dots+a_{n}).
+\end{equation}
+\end{example}
+\newpage
+
+% 例 4
+\begin{example}{}{}
+求最小的实数 $\lambda$，使得对任意正整数 $n$ 及任意满足 $\sum_{i=1}^{n}a_{i}=1$ 的正实数 $a_{1},a_{2},\dots,a_{n}$ 都有
+\begin{equation}
+    \lambda\prod_{i=1}^{n}(1-a_{i})\ge1-\sum_{i=1}^{n}a_{i}^{2}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 5
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \prod_{i=1}^{n}(a_{i}^{2}+n-1)\ge n^{n-2}\Bigl(\sum_{i=1}^{n}a_{i}\Bigr)^{2}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 6
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=n$。求证：
+\begin{equation}
+    (a_{1}^{n}+1)(a_{2}^{n}+1)\dots(a_{n}^{n}+1)\ge2^{n}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 7
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是不全为 1 的正整数，满足 $\frac{1}{a_{1}}+\frac{1}{a_{2}}+\dots+\frac{1}{a_{n}}=k$ 是整数。求证：多项式
+\begin{equation}
+    P(x)=a_{1}a_{2}\dots a_{n}(x+1)^{k}-(x+a_{1})(x+a_{2})\dots(x+a_{n})
+\end{equation}
+没有正根。
+\end{example}
+\newpage
+
+% 例 8
+\begin{example}{}{}
+设整数 $n\ge3$，多项式 $P(x)=x^{n}+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+\dots+a_{1}x+a_0$ 有 $n$ 个实根，且都在区间 $(0,1)$ 内。求证：
+\begin{equation}
+    \sum_{i=1}^{n-2}ia_{i}>0.
+\end{equation}
+\end{example}
+\newpage
+% % 例 2
+% \begin{thm}{Mitrinovic 不等式}{}
+% 设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：对 $a_{1},a_{2},\dots,a_{n}$ 的任一排列 $b_{1},b_{2},\dots,b_{n}$，都有
+% \begin{equation}
+%     \sum_{i=1}^{n}a_{i}^{b_{i}}>1.
+% \end{equation}
+% \end{thm}
+% \newpage
+% === 作业题部分 ===
+\section{练习题}
+% 作业题 1
+\begin{problem}{}{}
+设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{i}\ge-1,\ i=1,2,\dots,n$ 且 $\sum_{i=1}^{n}a_{i}=0$。求证：
+\begin{equation}
+    \prod_{i=1}^{n}(1+a_{i})+\frac{n}{4}\sum_{i=1}^{n}a_{i}^{2}\ge1.
+\end{equation}
+\end{problem}
+% 作业题 2
+\begin{problem}{}{}
+给定整数 $n\ge2$，求最小的实数 $\lambda$，使得对任意非负实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n}\sqrt{a_{i}}\le\sqrt{\prod_{i=1}^{n}(a_{i}+\lambda)}.
+\end{equation}
+\end{problem}

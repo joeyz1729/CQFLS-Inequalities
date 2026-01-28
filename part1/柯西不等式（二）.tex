@@ -1,0 +1,120 @@
+\chapter{柯西不等式 (二)}
+
+本节介绍柯西不等式与换元、待定系数、裂项等方法综合运用的问题。
+
+\section{换元法}
+
+% 例 1
+\begin{example}{}{}
+给定正整数 $n$。设实数 $a_{1},a_{2},\dots,a_{2n}$ 满足 $\sum_{i=1}^{2n-1}(a_{i+1}-a_{i})^{2}=1$，求
+\begin{equation}
+    (a_{n+1}+a_{n+2}+\dots+a_{2n})-(a_{1}+a_{2}+\dots+a_{n})
+\end{equation}
+的最大值。
+\end{example}
+
+\newpage 
+% 例 2
+\begin{example}{}{}
+设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=0$，求证：
+\begin{equation}
+    \max_{1\le k\le n}a_{k}^{2}\le\frac{n}{3}\sum_{i=1}^{n-1}(a_{i+1}-a_{i})^{2}.
+\end{equation}
+\end{example}
+
+\newpage 
+% 例 3
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \sum_{k=1}^{n}\sum_{j=1}^{k}\sum_{i=1}^{j}a_{i}\le 2\sum_{j=1}^{n}\frac{1}{a_{j}}\left(\sum_{i=1}^{j}a_{i}\right)^{2}.
+\end{equation}
+\end{example}
+
+\newpage 
+% 例 4
+\begin{example}{}{}
+给定整数 $n\ge2$。设非负实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}^{2}+2\sum_{1\le i<j\le n}\sqrt{\frac{i}{j}}a_{i}a_{j}=1$，求 $\sum_{i=1}^{n}a_{i}$ 的最大值和最小值。
+\end{example}
+
+\newpage 
+\section{待定系数法}
+
+% 例 5
+\begin{example}{Ostrowski 不等式}{}
+设实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n},x_{1},x_{2},\dots,x_{n}$ 满足 $\sum_{i=1}^{n}a_{i}x_{i}=0,\ \sum_{i=1}^{n}b_{i}x_{i}=1$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}x_{i}^{2}\ge\frac{\sum_{i=1}^{n}a_{i}^{2}}{(\sum_{i=1}^{n}a_{i}^{2})(\sum_{i=1}^{n}b_{i}^{2})-(\sum_{i=1}^{n}a_{i}b_{i})^{2}}.
+\end{equation}
+\end{example}
+
+\newpage 
+% 例 6
+\begin{example}{}{}
+给定正整数 $n$。设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}ia_{i}=1$。求
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}^{2}+\sum_{1\le i<j\le n}a_{i}a_{j}
+\end{equation}
+的最小值。
+\end{example}
+
+\newpage 
+\section{裂项法}
+
+% 例 7
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求证：
+\begin{equation}
+    \frac{a_{1}}{1+a_{1}^{2}}+\frac{a_{2}}{1+a_{1}^{2}+a_{2}^{2}}+\dots+\frac{a_{n}}{1+a_{1}^{2}+\dots+a_{n}^{2}}<\sqrt{n}.
+\end{equation}
+\end{example}
+
+\newpage 
+% 例 8
+\begin{example}{}{}
+设整数 $n\ge2$，正整数 $a_{1}<a_{2}<\dots<a_{n}$ 满足 $\sum_{i=1}^{n}\frac{1}{a_{i}}\le1$。求证：对任意实数 $x$，有
+\begin{equation}
+    \left(\sum_{i=1}^{n}\frac{1}{a_{i}^{2}+x^{2}}\right)^{2}\le\frac{1}{2}\cdot\frac{1}{a_{1}(a_{1}-1)+x^{2}}.
+\end{equation}
+\end{example}
+
+
+
+\newpage 
+\section{作业题}
+
+% 作业 1
+\begin{homework}{}{}
+设实数 $1=a_{1}\ge a_{2}\ge\dots\ge a_{n}\ge a_{n+1}=0$，求证：
+\begin{equation}
+    \sqrt{\sum_{i=1}^{n}a_{i}}\ge\sum_{i=1}^{n}\sqrt{i}(a_{i}-a_{i+1}).
+\end{equation}
+\end{homework}
+
+\newpage 
+% 作业 2
+\begin{homework}{}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{2n-1}$ 是实数，求证：
+\begin{equation}
+    (a_{1}+a_{3}+\dots+a_{2n-1})^{2}\le\sum_{1\le i\le j\le2n-1}(a_{i}+\dots+a_{j})^{2}.
+\end{equation}
+\end{homework}
+
+\newpage 
+% 作业 3
+\begin{homework}{}{}
+给定整数 $n\ge2$。求最小的实数 $\lambda$，使得对任意满足 $\sum_{i=1}^{n}ia_{i}=0$ 的实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}\right)^{2}\le\lambda\sum_{i=1}^{n}a_{i}^{2}.
+\end{equation}
+\end{homework}
+
+\newpage 
+% 作业 4
+\begin{homework}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是正实数，求证：
+\begin{equation}
+    \frac{1}{1+a_{1}}+\frac{1}{1+a_{1}+a_{2}}+\dots+\frac{1}{1+a_{1}+\dots+a_{n}}<\sqrt{\frac{1}{a_{1}}+\frac{1}{a_{2}}+\dots+\frac{1}{a_{n}}}.
+\end{equation}
+\end{homework}
+

@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1768481761.29359 "main.xdv" "main.pdf" "main" 1768481761.29202 2
-  "main.xdv" 1768481761 477408 f9dad5e27574bbcf51d67c2eebd471ba "xelatex"
+["xdvipdfmx"] 1769616644.20482 "main.xdv" "main.pdf" "main" 1769616644.89273 0
+  "main.xdv" 1769616643 485712 c36a6d745b0c3b48613073a5306b63e8 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1768481758.98126 "e:/Latex/CQFLS-Inequalities/main.tex" "main.xdv" "main" 1768481761.76297 0
+["xelatex"] 1769616641.62273 "e:/Latex/CQFLS-Inequalities/main.tex" "main.xdv" "main" 1769616644.88273 0
   "c:/Windows/Fonts/msyh.ttc" 1739071571 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1750399056 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1750406124 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -205,27 +205,27 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1750397020 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1750406307 5891394 164bede4a033a83d4bffac3001ee1c10 ""
   "c:/texlive/2025/texmf.cnf" 1750406185 713 e69b156964470283e0530f5060668171 ""
-  "chapters/abel变换.aux" 1768481760 1768 f247768601597ad37a65f8cddc9ab357 "xelatex"
-  "chapters/abel变换.tex" 1768133538 6535 322c5cbce8623d25426bc88306555a0f ""
-  "chapters/调整法.aux" 1768481761 1652 eb4580d6f4a666acd829ca231acbed06 "xelatex"
-  "chapters/调整法.tex" 1768481752 13146 ce65c156d5752e3ff814dc7c05ca98ba ""
-  "chapters/恒等变形.aux" 1768481760 3330 04803bed78a71fde902e44ce83087c6d "xelatex"
-  "chapters/恒等变形.tex" 1768476851 11038 b5ccb95a4a365889fc2c3a16a99fbca1 ""
-  "chapters/局部不等式.aux" 1768481760 1608 7367afeb0825e68d81bd88f3decb03c1 "xelatex"
-  "chapters/局部不等式.tex" 1768040366 7372 e66d4e4e6c8dc21f3ad630da39724408 ""
-  "e:/Latex/CQFLS-Inequalities/main.tex" 1768477073 7105 4c6915a3bb2c4c15a3a249340e5d338a ""
-  "main.aux" 1768481761 415 d6f76f5e3f3c4a005c549245bb64d17b "xelatex"
-  "main.out" 1768481761 1408 192cec6be000c17d7bff5fac7079581a "xelatex"
-  "main.tex" 1768477073 7105 4c6915a3bb2c4c15a3a249340e5d338a ""
-  "main.toc" 1768481761 1317 b890a18de56de17e874c6ae27f367565 "xelatex"
+  "e:/Latex/CQFLS-Inequalities/main.tex" 1769615925 7412 022b8020afc5b88a133d81e6bf779ac0 ""
+  "main.aux" 1769616643 415 709291b97914a382f69a51384fffabb1 "xelatex"
+  "main.out" 1769616643 1456 5201707eba037a538484ef5143e8b966 "xelatex"
+  "main.tex" 1769615925 7412 022b8020afc5b88a133d81e6bf779ac0 ""
+  "main.toc" 1769616643 1335 b5c8e531a3c9c48991f54d2129602cd1 "xelatex"
+  "part2/abel变换.aux" 1769616643 1765 f811ea77d943528913415281448525fe "xelatex"
+  "part2/abel变换.tex" 1769616401 6527 5c8684ab742ef2009559e6ccd734ce7c ""
+  "part2/调整法.aux" 1769616643 1649 bfdbfdf0f33acae597ea0e8932f4f2cd "xelatex"
+  "part2/调整法.tex" 1769616640 13180 619a71c21d1e8137853612d7133951e8 ""
+  "part2/恒等变形.aux" 1769616643 3328 a15d290a13708eba1317c3a680c60aaf "xelatex"
+  "part2/恒等变形.tex" 1769616326 10742 850efd8c8a734a52243796a16a0d4c92 ""
+  "part2/局部不等式.aux" 1769616643 1605 5c54c119758080a4614a5de82ee2327c "xelatex"
+  "part2/局部不等式.tex" 1769616521 7488 f0513f28fc29d9da5e2ecc260756b5d0 ""
   (generated)
-  "chapters/abel变换.aux"
-  "chapters/调整法.aux"
-  "chapters/恒等变形.aux"
-  "chapters/局部不等式.aux"
   "main.aux"
   "main.log"
   "main.out"
   "main.toc"
   "main.xdv"
+  "part2/abel变换.aux"
+  "part2/调整法.aux"
+  "part2/恒等变形.aux"
+  "part2/局部不等式.aux"
   (rewritten before read)

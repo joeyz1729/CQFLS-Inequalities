@@ -1,0 +1,139 @@
+\chapter{均值不等式 (二)}
+\section{基础知识}
+\begin{thm}{对称交叉项}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n}$ 是实数，则
+\begin{equation}
+    \sum_{1\le i<j\le n}a_{i}a_{j}\le\frac{n-1}{2n}\left(\sum_{i=1}^{n}a_{i}\right)^{2}.
+\end{equation}
+\end{thm}
+
+
+\newpage 
+\begin{thm}{轮换交叉项}{}
+（四分之一引理）设整数 $n\ge 4$，$a_{1},a_{2},\dots,a_{n}$ 是非负实数，则
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}a_{i+1}\le\frac{1}{4}\left(\sum_{i=1}^{n}a_{i}\right)^{2},
+\end{equation}
+其中 $a_{n+1}=a_{1}$。
+\end{thm}
+
+
+\newpage 
+\section{典型例题}
+% 例 1
+\begin{example}{}{}
+给定整数 $n\ge2$。设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}^{2}+\sum_{1\le i<j\le n}a_{i}a_{j}+\sum_{i=1}^{n}a_{i}
+\end{equation}
+的最小值。
+\end{example}
+
+
+\newpage
+% 例 2
+\begin{example}{}{}
+给定整数 $n\ge2$。设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}^{2}+\sum_{i=1}^{n-1}a_{i}a_{i+1}+\sum_{i=1}^{n}a_{i}
+\end{equation}
+的最小值。
+\end{example}
+
+
+\newpage
+% 例 3
+\begin{example}{}{}
+给定整数 $n\ge3$。设 $a_{1},a_{2},\dots,a_{2n},b_{1},b_{2},\dots,b_{2n}$ 是 $4n$ 个非负实数，满足
+\begin{equation}
+    a_{1}+a_{2}+\dots+a_{2n}=b_{1}+b_{2}+\dots+b_{2n}>0
+\end{equation}
+且对任意 $i=1,2,\dots,2n$，有 $a_{i}a_{i+2}\ge b_{i}+b_{i+1}$（这里 $a_{2n+1}=a_{1},a_{2n+2}=a_{2},b_{2n+1}=b_{1}$）。
+求 $a_{1}+a_{2}+\dots+a_{2n}$ 的最小值。
+\end{example}
+
+
+\newpage
+% 例 4
+\begin{example}{}{}
+给定整数 $n\ge3$。设实数 $a_{1},a_{2},\dots,a_{n}\ge-1$ 且满足 $a_{1}+a_{2}+\dots+a_{n}=0$，求
+\begin{equation}
+    a_{1}a_{2}+a_{2}a_{3}+\dots+a_{n-1}a_{n}
+\end{equation}
+的最大值。
+\end{example}
+
+
+\newpage
+% 例 5
+\begin{example}{}{}
+给定整数 $n\ge4$。求最大的实数 $\lambda$，使得对任意非负实数 $a_{1},a_{2},\dots,a_{n}$，均有
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}a_{i+1}+\lambda mM\le\frac{1}{4}\left(\sum_{i=1}^{n}a_{i}\right)^{2},
+\end{equation}
+其中 $a_{n+1}=a_{1}$，$m=\min\{a_{1},a_{2},\dots,a_{n}\}$，$M=\max\{a_{1},a_{2},\dots,a_{n}\}$。
+\end{example}
+
+
+\newpage
+% 例 6
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{100}$ 满足 $a_{i}+a_{i+1}+a_{i+2}\le1,1\le i\le100$，其中脚标按模 100 理解。求 $\sum_{i=1}^{100}a_{i}a_{i+1}$ 的最大值。
+\end{example}
+
+
+\newpage
+% 例 7
+\begin{example}{}{}
+给定整数 $n\ge3,\ \lambda\in[\frac{1}{2},2]$。设非负实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $\sum a_i = \sum b_i = 1$。
+对 $1\le i\le n$，记 $c_{i}=(\lambda a_{i}+b_{i+1})(\lambda a_{i+1}+b_{i})$，其中 $a_{n+1}=a_{1},b_{n+1}=b_{1}$。求 $c_{1}+c_{2}+\dots+c_{n}$ 的最大值。
+\end{example}
+
+
+\newpage
+\section{作业题}
+
+% 作业题 1
+\begin{homework}{}{}
+设 $a_{1},a_{2},\dots,a_{100}$ 是非负实数，满足：
+\begin{enumerate}
+    \item $a_{1}+a_{2}+\dots+a_{100}=2$;
+    \item $a_{1}a_{2}+a_{2}a_{3}+\dots+a_{100}a_{1}=1$.
+\end{enumerate}
+求 $a_{1}^{2}+a_{2}^{2}+\dots+a_{100}^{2}$ 的最大值和最小值。
+\end{homework}
+
+
+\newpage
+% 作业题 2
+\begin{homework}{}{}
+给定整数 $n\ge4$。设非负实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=2$，求
+\begin{equation}
+    \frac{a_{1}}{a_{2}^{2}+1}+\frac{a_{2}}{a_{3}^{2}+1}+\dots+\frac{a_{n}}{a_{1}^{2}+1}
+\end{equation}
+的最小值。
+\end{homework}
+
+
+\newpage
+% 作业题 3
+\begin{homework}{}{}
+给定整数 $n\ge4$。设非负实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=1$，求
+\begin{equation}
+    a_{1}a_{2}a_{3}+a_{2}a_{3}a_{4}+\dots+a_{n}a_{1}a_{2}
+\end{equation}
+的最大值。
+\end{homework}
+
+
+\newpage
+% 作业题 4
+\begin{homework}{}{}
+给定整数 $n\ge2$。设集合 $T=\{(i,j) \mid 1\le i < j \le n,\ i \mid j\}$。
+对任意满足 $x_{1}+x_{2}+\dots+x_{n}=1$ 的非负实数 $x_{1},x_{2},\dots,x_{n}$，求
+\begin{equation}
+    \sum_{(i,j)\in T} x_i x_j
+\end{equation}
+的最大值。
+\end{homework}
+

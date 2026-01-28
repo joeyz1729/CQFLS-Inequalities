@@ -1,0 +1,347 @@
+\chapter{恒等变形}
+\section{基础知识}
+
+\begin{thm}{}{basic_split}
+\begin{gather}
+    a_n - a_1 = \sum_{i=1}^{n-1} (a_{i+1} - a_i) \\
+    \left(\sum_{i=1}^n a_i\right)^2 = \sum_{i=1}^n a_i^2 + 2 \sum_{1 \leq i < j \leq n} a_i a_j = \sum_{i=1}^n a_i^2 + \sum_{i \neq j} a_i a_j
+\end{gather}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+
+\begin{thm}{}{cyclic_diff}
+当 $a_{n+1} = a_1$ 时：
+\begin{equation}
+    \sum_{i=1}^n a_i^2 - \sum_{i=1}^n a_i a_{i+1} = \frac{1}{2} \sum_{i=1}^n (a_i - a_{i+1})^2
+\end{equation}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+\begin{thm}{拉格朗日恒等式 (Lagrange)}{lagrange}
+\begin{gather}
+    \left(a_i a_j + b_i b_j\right) - \left(a_i b_j + a_j b_i\right) = \left(a_i - b_i\right)\left(a_j - b_j\right), \quad 1 \leq i, j \leq n \\[8pt]
+    \sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2 = \left(\sum_{i=1}^n a_i b_i\right)^2 + \sum_{1 \leq i < j \leq n} (a_i b_j - a_j b_i)^2
+\end{gather}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+
+\begin{thm}{}{variance}
+\begin{gather}
+    \sum_{1 \leq i < j \leq n} (a_i - a_j)^2 = n \sum_{i=1}^n a_i^2 - \left(\sum_{i=1}^n a_i\right)^2 \\
+    = (n - 1) \sum_{i=1}^n a_i^2 - \sum_{1 \leq i < j \leq n} 2 a_i a_j \\[8pt]
+    \sum_{i=1}^n \left(2 \sum_{k=1}^n b_k - n b_i\right)^2 = n^2 \sum_{i=1}^n b_i^2
+\end{gather}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+
+
+
+
+\begin{thm}{}{double_sum}
+\begin{gather}
+    \sum_{1 \leq i \leq j \leq n} a_i a_j = \sum_{j=1}^n \sum_{i=1}^j a_i a_j = \sum_{i=1}^n \sum_{j=i}^n a_i a_j \\
+    = \sum_{i=1}^n a_i^2 + \sum_{1 \leq i < j \leq n} a_i a_j \\[10pt]
+    \sum_{i=1}^n a_i \cdot \sum_{i=1}^n b_i = \sum_{i=1}^n \sum_{j=1}^n a_i b_j = \sum_{i=1}^n \sum_{j=1}^n a_j b_i = \frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n (a_i b_j + a_j b_i)
+\end{gather}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+
+\begin{thm}{}{prefix_sum}
+\begin{gather}
+    \sum_{k=1}^n\left(\sum_{i=1}^k a_i\right)^2 = \sum_{i=1}^n(n + 1 - i)a_i^2 + 2\sum_{1 \leq j < k \leq n}(n + 1 - k)a_j a_k \\[6pt]
+    (n + 1)\left(\sum_{k=1}^n a_k\right)^2 - \sum_{k=1}^n\left(\sum_{i=1}^k a_i\right)^2 = \sum_{i=1}^n i a_i^2 + 2\sum_{1 \leq j < k \leq n} k a_j a_k \\[6pt]
+    \sum_{k=1}^{n-1}\left(\sum_{i=1}^k a_i\right)\left(\sum_{i=k+1}^n a_i\right) = \sum_{1 \leq i < j \leq n}(j - i)a_i a_j \\[6pt]
+    \sum_{k=1}^n\left(\sum_{i=k}^n a_i\right)^2 = \sum_{i=1}^n i a_i^2 + 2\sum_{1 \leq i < k \leq n} i a_i a_k
+\end{gather}
+\end{thm}
+% 留白供笔记
+\vspace{2.5cm}
+
+
+\begin{thm}{}{special_construct}
+\begin{gather}
+    \sum_{k=1}^n \frac{a_{k+1}}{a_k(a_k + a_{k+1})} = \sum_{k=1}^n \frac{a_k}{a_{k+1}(a_k + a_{k+1})} \\[10pt]
+    \sum_{i=1}^n \frac{1}{1 + \sum_{k=0}^{n-2} \left(\prod_{j=i}^{i+k} a_j\right)} = 1 \quad (\text{其中} \prod_{i=1}^n a_i = 1) \\[10pt]
+    \prod_{k=1}^n(a_k^2 + 1) = \left[\sum_{k=0}^{\left[\frac{n}{2}\right]}(-1)^k \sigma_{2k}\right]^2 + \left[\sum_{k=0}^{\left[\frac{n-1}{2}\right]}(-1)^k \sigma_{2k+1}\right]^2
+\end{gather}
+\end{thm}
+% 最后也留一点
+\vspace{2.5cm}
+
+
+% chapters/ch02.tex
+
+
+\section{预习题}
+% === 第 1 题 ===
+\begin{preview}{}{p1}
+求下列各式的值：
+\begin{enumerate}
+    \item $S_1=\sum_{1 \leq i<j \leq n}(i-j)^2$
+    \item $S_2=\sum_{1 \leq i<j \leq n} i \cdot j$
+    \item $S_3=\sum_{1 \leq i<j \leq n}\left(i^2+j^2\right)$
+\end{enumerate}
+\end{preview}
+
+% === 第 13 题 ===
+\begin{preview}{2001 韩国}{p13}
+已知实数 \( x_1, x_2, \cdots, x_n, y_1, y_2, \cdots, y_n \) 满足 \( \sum_{i=1}^n x_i^2=\sum_{i=1}^n y_i^2=1 \)，证明：
+\begin{equation}
+    1-\left(x_1 y_1+x_2 y_2+\cdots+x_n y_n\right) \geq \frac{\left(x_1 y_2-x_2 y_1\right)^2}{2}
+\end{equation}
+\end{preview}
+
+
+
+\newpage
+\section{例题}
+
+
+
+% === 第 2 题 ===
+\begin{example}{}{p2}
+设 \( x_1, x_2, \cdots, x_n \) 为正实数，且 \( x_{n+1}=x_1 \)，证明：
+\begin{equation}
+    \frac{x_1 x_2}{x_1+x_2}+\frac{x_2 x_3}{x_2+x_3}+\cdots+\frac{x_n x_{n+1}}{x_n+x_{n+1}} \leq \frac{1}{2} \cdot\left(x_1+x_2+\cdots+x_n\right)
+\end{equation}
+\end{example}
+\newpage
+
+% === 第 3 题 ===
+\begin{example}{}{p3}
+设 \( x_1, x_2, \cdots, x_n \) 为正实数，且 \( x_{n+1}=x_1 \)，证明：
+\begin{equation}
+    \frac{x_1^2}{x_2}+\frac{x_2^2}{x_3}+\cdots+\frac{x_n^2}{x_{n+1}} \geq \frac{2 x_1^2}{x_1+x_2}+\frac{2 x_2^2}{x_2+x_3}+\cdots+\frac{2 x_n^2}{x_n+x_{n+1}}
+\end{equation}
+\end{example}
+\newpage
+
+
+% === 第 8 题 ===
+\begin{example}{1998 前南斯拉夫}{p8}
+设正整数 \( n \geq 2 \)，且 \( a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n \) 是正实数，证明：
+\begin{equation}
+    \left(\sum_{i \neq j} a_i b_j\right)^2 \geq \sum_{i \neq j} a_i a_j \cdot \sum_{i \neq j} b_i b_j
+\end{equation}
+\end{example}
+\newpage
+
+
+
+
+
+
+
+
+
+
+% 带系数
+
+% === 第 6 题 ===
+\begin{example}{2016 西部赛}{p6}
+设 \( a_1, a_2, \cdots, a_n \) 为 \( n \) 个非负实数，记 \( S_k=\sum_{i=1}^k a_i(1 \leq k \leq n) \)，证明：
+\begin{equation}
+    \sum_{i=1}^n\left(a_i S_i \cdot \sum_{j=i}^n a_j^2\right) \leq \sum_{i=1}^n\left(a_i S_i\right)^2
+\end{equation}
+\end{example}
+\newpage
+
+% === 第 7 题 ===
+\begin{example}{}{p7}
+设整数 \( n \geq 2, a_1, a_2, \cdots, a_n \) 是正实数，设 \( M=\max \left\{a_1, a_2, \cdots, a_n\right\} \)，证明：
+\begin{equation}
+    M \cdot \sum_{i=1}^n i a_i \geq \frac{n+1}{n-1} \cdot \sum_{1 \leq i<j \leq n} a_i a_j
+\end{equation}
+\end{example}
+\newpage
+
+
+% 增量 换元
+
+
+
+% === 第 9 题 ===
+\begin{example}{2018 西部赛}{p9}
+设整数 \( n \geq 2 \)，正实数 \( a_1 \geq a_2 \geq \cdots \geq a_n \)，且 \( a_1=a_{n+1} \)，证明：
+\begin{equation}
+    \sum_{i=1}^n \frac{a_i}{a_{i+1}}-n \leq \frac{1}{2 a_1 a_n} \cdot \sum_{i=1}^n\left(a_i-a_{i+1}\right)^2
+\end{equation}
+\end{example}
+\newpage
+
+
+% lagrange 恒等式
+
+% === 第 10 题 ===
+\begin{example}{1991 IMO 预选}{p10}
+给定整数 \( n \geq 2 \)，且非负实数 \( x_1, x_2, \cdots, x_n \) 满足 \( x_1+x_2+\cdots+x_n=1 \)，求
+\begin{equation}
+    P=\sum_{1 \leq i<j \leq n} x_i x_j \cdot\left(x_i+x_j\right)
+\end{equation}
+的最大值与最小值，并给出相应的取等条件。
+\end{example}
+\newpage
+
+
+
+
+
+
+% === 第 14 题 ===
+\begin{example}{2006 IMO 预选}{p14}
+设 \( a_1, a_2, \cdots, a_n \) 是正实数，证明：
+\begin{equation}
+    \sum_{1 \leq i<j \leq n} \frac{a_i a_j}{a_i+a_j} \leq \frac{n}{2\left(a_1+a_2+\cdots+a_n\right)} \cdot \sum_{1 \leq i<j \leq n} a_i a_j
+\end{equation}
+\end{example}
+\newpage
+
+% === 第 15 题 ===
+\begin{example}{}{p15}
+设 \( a_i, b_i, c_i \) 均为实数，其中 \( i=1,2, \cdots, n \)．且 \( \sum_{i=1}^n b_i^2=\sum_{i=1}^n b_i c_i=1, \sum_{i=1}^n a_i b_i=0 \)，证明：
+\begin{equation}
+    \sum_{1 \leq i<j \leq n}\left(a_i c_j-a_j c_i\right)^2 \geq a_1^2+a_2^2+\cdots+a_n^2
+\end{equation}
+\end{example}
+\newpage
+
+
+
+% === 第 17 题 ===
+\begin{example}{}{p17}
+设 \( a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n \) 是实数，证明：
+\begin{equation}
+    \sum_{i=1}^n a_i b_i+\sqrt{\sum_{i=1}^n a_i^2 \cdot \sum_{i=1}^n b_i^2} \geq \frac{2}{n} \cdot \sum_{i=1}^n a_i \cdot \sum_{i=1}^n b_i
+\end{equation}
+\end{example}
+\newpage
+
+% 第 6 题
+\begin{example}{}{}
+设整数 $n\ge2$，$z_1, z_2, \dots, z_n$ 是复数，求证：
+\begin{equation}
+    \Bigl(\sum_{1\le i<j\le n}|z_{i}-z_{j}|\Bigr)^{2}\ge(n-1)\sum_{1\le i<j\le n}|z_{i}-z_{j}|^{2}.
+\end{equation}
+\end{example}
+\newpage
+
+
+% 第 4 题
+\begin{example}{}{}
+设 $n\geq 3$，记正实数 $a_1,a_2,\dots,a_n$ 的和为 $S$，证明：
+\begin{equation}
+    \sum_{i=1}^n a_i^2\sum_{i=1}^n\frac{1}{a_i}+n(n-2)S \leq S\sum_{i=1}^n\frac{S-a_i}{a_i}
+\end{equation}
+\end{example}
+\newpage
+
+
+% === 第 19 题 ===
+\begin{example}{}{p19}
+设正整数 $n\geq 2$，非负实数 $x_1,x_2,\dots,x_n$ 的和为 1，求
+\begin{equation}
+S=\sum_{1\leq i<j\leq n}(j-i)x_i x_j
+\end{equation}
+的最大值。
+\end{example}
+\newpage
+
+% === 第 20 题 ===
+\begin{example}{2004 俄罗斯}
+设整数 \( n \geq 4 \)，正实数 \( x_1, x_2, \cdots, x_n \) 满足 \( x_1 x_2 \cdots x_n=1 \)，证明：
+\begin{equation}
+    \frac{1}{1+x_1+x_1 x_2}+\frac{1}{1+x_2+x_2 x_3}+\cdots+\frac{1}{1+x_n+x_n x_1}>1
+\end{equation}
+\end{example}
+\newpage
+
+
+
+% 第 1 题
+\begin{example}{}{}
+设正整数 $n\geq 3$，正实数 $x_1,x_2,\dots,x_n$ 满足 $\sum_{k=1}^n\frac{1}{1+x_k}=n-1$，证明：
+\begin{equation}
+    \sum_{1\leq i<j<k\leq n}\sqrt[3]{x_i x_j x_k} \leq\frac{n(n-2)}{6}
+\end{equation}
+\end{example}
+\newpage
+
+
+
+
+
+
+
+
+
+\section{作业题}
+% === 第 4 题 ===
+\begin{homework}{}{p4}
+证明：
+\begin{equation}
+    \frac{4 \cdot \sum_{i=1}^n a_i \cdot \sum_{i=1}^n a_{i+1}}{\sum_{i=1}^n a_i+\sum_{i=1}^n a_{i+1}}\geq \sum_{i=1}^n \frac{4 a_i a_{i+1}}{a_i+a_{i+1}}
+\end{equation}
+\end{homework}
+
+
+\newpage 
+% === 第 5 题 ===
+\begin{homework}{2016 IMC}{p5}
+设实数 \( a_1, a_2, \cdots, a_n \) 和 \( b_1, b_2, \cdots, b_n \) 满足 \( a_i+b_i>0(i=1,2, \cdots, n) \)，证明：
+\begin{equation}
+    \frac{\sum_{i=1}^n a_i \cdot \sum_{i=1}^n b_i-\left(\sum_{i=1}^n b_i\right)^2}{\sum_{i=1}^n\left(a_i+b_i\right)} \geq \sum_{i=1}^n \frac{a_i b_i-b_i^2}{a_i+b_i}
+\end{equation}
+\end{homework}
+
+
+
+\newpage 
+% === 第 11 题 ===
+\begin{homework}{}{p11}
+给定整数 \( n \geq 2 \)，且非负实数 \( x_1, x_2, \cdots, x_n \) 满足 \( x_1+x_2+\cdots+x_n=1 \)，求
+\begin{equation}
+    Q=\sum_{1 \leq i<j \leq n}\left(1+\sqrt{x_i x_j}\right) \cdot\left(\sqrt{x_i}+\sqrt{x_j}\right)
+\end{equation}
+的最大值，并给出相应的取等条件。
+\end{homework}
+
+
+
+\newpage 
+% === 第 16 题 ===
+\begin{homework}{}{p16}
+已知实数 \( a_1, a_2, \cdots, a_n \) 满足 \( 0<a_i \leq \frac{1}{2}(i=1,2, \cdots, n) \)，证明：
+\begin{equation}
+    \frac{\sum_{i=1}^n a_i^2}{\left(\sum_{i=1}^n a_i\right)^2} \geq \frac{\sum_{i=1}^n\left(1-a_i\right)^2}{\left[\sum_{i=1}^n\left(1-a_i\right)\right]^2}
+\end{equation}
+\end{homework}
+
+
+\newpage 
+% === 第 18 题 ===
+\begin{homework}{}{p18}
+设实数 $a_1, a_2, \cdots, a_n, b_1, b_2, \cdots, b_n$ 满足 $a_1 b_1+a_2 b_2+\cdots+a_n b_n=0$ ，求证：
+\begin{equation}
+ \sum_{k=1}^n a_k^2 \cdot \sum_{k=1}^n b_k^2 \geq \frac{4}{n^2} \cdot\left(\sum_{k=1}^n a_k\right)^2 \cdot\left(\sum_{k=1}^n b_k\right)^2 .
+\end{equation}
+\end{homework}
+
+
+
+\newpage 
+% 第 6 题
+\begin{homework}{}{}
+设 $a_1,a_2,\dots,a_n$ 为正实数，证明：
+\begin{equation}
+    \sum_{k=1}^n a_k\sum_{k=1}^n\frac{1}{a_k} \geq\frac{(n-1)^2\sum_{k=1}^n a_k^2}{\sum_{1\leq k<j\leq n}a_k a_j} +n^2-2n+2
+\end{equation}
+\end{homework}
