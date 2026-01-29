@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {5.3}作业题}{63}{section.5.3}%
 \contentsline {chapter}{\numberline {第六章\hspace {.3em}}排序不等式与切比雪夫不等式}{65}{chapter.6}%
 \contentsline {section}{\numberline {6.1}基础知识}{65}{section.6.1}%
-\contentsline {section}{\numberline {6.2}典型例题}{67}{section.6.2}%
+\contentsline {section}{\numberline {6.2}例题}{67}{section.6.2}%
 \contentsline {section}{\numberline {6.3}作业题}{75}{section.6.3}%
 \contentsline {chapter}{\numberline {第七章\hspace {.3em}}补充练习题}{79}{chapter.7}%
 \contentsline {part}{第二部分\hspace {1em}基本方法}{90}{part.2}%
@@ -69,7 +69,8 @@
 \contentsline {section}{\numberline {17.2}作业题}{234}{section.17.2}%
 \contentsline {section}{\numberline {17.3}其他练习题}{237}{section.17.3}%
 \contentsline {chapter}{\numberline {第十八章\hspace {.3em}}平均值原理与不等式}{239}{chapter.18}%
-\contentsline {section}{\numberline {18.1}作业题}{248}{section.18.1}%
+\contentsline {section}{\numberline {18.1}例题}{239}{section.18.1}%
+\contentsline {section}{\numberline {18.2}作业题}{248}{section.18.2}%
 \contentsline {chapter}{\numberline {第十九章\hspace {.3em}}归纳法与不等式 (一)}{252}{chapter.19}%
 \contentsline {section}{\numberline {19.1}例题}{252}{section.19.1}%
 \contentsline {section}{\numberline {19.2}作业题}{260}{section.19.2}%
