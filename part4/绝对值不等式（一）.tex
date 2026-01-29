@@ -1,0 +1,117 @@
+% chapters/09_abs_ineq_1.tex
+
+\chapter{绝对值不等式（一）}
+本讲介绍含绝对值的不等式，最常用的方法是三角不等式和正负分离。
+
+
+% \section{预习题}
+\section{例题}
+% 例 1
+\begin{example}{}{}
+设整数 $n\ge2$，$a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 是实数，求证：存在 $1\le k\le n$，使得
+\begin{equation}
+    \sum_{i=1}^{n}|a_{i}-a_{k}|\le\sum_{i=1}^{n}|b_{i}-a_{k}|.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 2
+\begin{example}{}{}
+设整数 $n\ge2$，实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n-1}|a_{i}-a_{i+1}|=1$。对 $1\le k\le n$，记 $A_{k}=\frac{1}{k}\sum_{i=1}^{k}a_{i}$，求证：
+\begin{equation}
+    \sum_{i=1}^{n-1}|A_{i}-A_{i+1}|\le1-\frac{1}{n}.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 3
+\begin{example}{}{}
+设整数 $n\ge2$，$a_{0},a_{1},\dots,a_{n}$ 是实数，满足 $a_{1}=a_{n-1}=0$。求证：对任意实数 $t$，
+\begin{equation}
+    |a_{0}|-|a_{n}|\le\sum_{i=0}^{n-2}|a_{i}-ta_{i+1}-a_{i+2}|.
+\end{equation}
+\end{example}
+\newpage
+
+% 例 4
+\begin{example}{}{}
+给定整数 $n\ge2$。设实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=0$ 且 $\sum_{i=1}^{n}a_{i}^{2}=1$。求：
+\begin{enumerate}
+    \item $\sum_{i=1}^{n}|a_{i}|$ 的最小值和最大值；
+    \item $\max_{1\le i\le n}|a_{i}|$ 的最小值和最大值。
+\end{enumerate}
+\end{example}
+\newpage
+
+% 例 5
+\begin{example}{}{}
+给定整数 $n\ge2$。设非负实数 $a_{1}\le a_{2}\le\dots\le a_{n},\ b_{1}\le b_{2}\le\dots\le b_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}b_{i}=1$。求：
+\begin{enumerate}
+    \item $\min_{1\le i\le n}|a_{i}-b_{i}|$ 的最大值；
+    \item $\sum_{i=1}^{n}|a_{i}-b_{i}|$ 的最大值。
+\end{enumerate}
+\end{example}
+\newpage
+
+% 例 6
+\begin{example}{}{}
+给定整数 $n \ge 2$。设实数 $-1\le a_{1}\le a_{2}\le\dots\le a_{n}\le1,\ -1\le b_{1}\le b_{2}\le\dots\le b_{n}\le1$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}b_{i}$。求 $\sum_{i=1}^{n}|a_{i}-b_{i}|$ 的最大值。
+\end{example}
+\newpage
+
+% 例 7
+\begin{example}{}{}
+设整数 $n\ge3$，非零实数 $x_1, x_2, \dots, x_n$ 满足 $\frac{x_{1}}{x_{2}}+\frac{x_{2}}{x_{3}}+\dots+\frac{x_{n}}{x_{1}}=0$。求证：
+\begin{equation}
+    |x_{1}x_{2}+x_{2}x_{3}+\dots+x_{n}x_{1}|\le\sum_{i=1}^{n}|x_{i}|\cdot(\max_{1\le i\le n}|x_{i}|-\min_{1\le i\le n}|x_{i}|).
+\end{equation}
+\end{example}
+\newpage
+
+% 例 8
+\begin{example}{}{}
+设实数 $a<b,\ \lambda_{1},\lambda_{2},\dots,\lambda_{n}\in[a,b]$。设实数 $x_{1},x_{2},\dots,x_{n},y_{1},y_{2},\dots,y_{n}$ 满足 $\sum_{i=1}^{n}x_{i}^{2}=\sum_{i=1}^{n}y_{i}^{2}=1$。求证：
+\begin{equation}
+    \left|\sum_{i=1}^{n}\lambda_{i}(x_{i}^{2}-y_{i}^{2})\right|\le(b-a)\sqrt{1-(\sum_{i=1}^{n}x_{i}y_{i})^{2}}.
+\end{equation}
+\end{example}
+
+
+
+\newpage
+\section{练习题}
+% 作业题 1
+\begin{homework}{}{}
+设整数 $n\ge2$，非零实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{1}+a_{2}+\dots+a_{n}=0$。求证：存在 $1\le i<j\le n$，使得
+\begin{equation}
+    \frac{1}{2}\le\left|\frac{a_{i}}{a_{j}}\right|\le2.
+\end{equation}
+\end{homework}
+
+\newpage
+% 作业题 2
+\begin{homework}{}{}
+设整数 $n\ge3$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $a_{i}\le1\ (i=1,2,\dots,n)$。对 $1\le k\le n$，记 $A_{k}=\frac{1}{k}\sum_{i=1}^{k}a_{i}$。求证：
+\begin{equation}
+    \left|\sum_{i=1}^{n}a_{i}-\sum_{i=1}^{n}A_{i}\right|<\frac{n-1}{2}.
+\end{equation}
+\end{homework}
+
+\newpage
+% 作业题 3
+\begin{homework}{}{}
+给定整数 $n\ge2$。求最大的实数 $\lambda$，使得对任意和为 0 的实数 $a_{1},a_{2},\dots,a_{n}$，都有
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}^{2}+1\ge\lambda\sum_{i=1}^{n}|a_{i}|.
+\end{equation}
+\end{homework}
+
+
+\newpage
+% 作业题 4
+\begin{homework}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}b_{i}=1$。求证：
+\begin{equation}
+    \sum_{i=1}^{n}|a_{i}-b_{i}|\le2-\min_{1\le i\le n}\frac{a_{i}}{b_{i}}-\min_{1\le i\le n}\frac{b_{i}}{a_{i}}.
+\end{equation}
+\end{homework}
