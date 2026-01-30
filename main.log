@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.4)  30 JAN 2026 13:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.4)  30 JAN 2026 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,13 +769,7 @@ Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
 \c@tcb@cnt@example=\count370
 \c@tcb@cnt@problem=\count371
 \c@tcb@cnt@homework=\count372
- (./main.aux (./part1/均值不等式（一）.aux) (./part1/均值不等式（二）.aux
-
-LaTeX Warning: Label `prob:已' multiply defined.
-
-
-LaTeX Warning: Label `prob:已' multiply defined.
-
+ (./main.aux (./part1/均值不等式（一）.aux) (./part1/均值不等式（二）.aux) (./part1/柯西不等式（一）.aux) (./part1/柯西不等式（二）.aux) (./part1/柯西不等式（三）.aux) (./part1/排序不等式与切比雪夫不等式.aux) (./part1/补充练习题.aux
 
 LaTeX Warning: Label `prob:设' multiply defined.
 
@@ -788,13 +782,6 @@ LaTeX Warning: Label `prob:已' multiply defined.
 
 LaTeX Warning: Label `prob:设' multiply defined.
 
-
-LaTeX Warning: Label `prob:设' multiply defined.
-
-
-LaTeX Warning: Label `prob:设' multiply defined.
-
-) (./part1/柯西不等式（一）.aux) (./part1/柯西不等式（二）.aux) (./part1/柯西不等式（三）.aux
 
 LaTeX Warning: Label `prob:设' multiply defined.
 
@@ -826,25 +813,10 @@ LaTeX Warning: Label `prob:已' multiply defined.
 LaTeX Warning: Label `prob:给' multiply defined.
 
 
-LaTeX Warning: Label `prob:已' multiply defined.
-
-
-LaTeX Warning: Label `prob:已' multiply defined.
-
-
-LaTeX Warning: Label `prob:设' multiply defined.
-
-
-LaTeX Warning: Label `prob:设' multiply defined.
-
-
 LaTeX Warning: Label `prob:设' multiply defined.
 
 
 LaTeX Warning: Label `prob:已' multiply defined.
-
-
-LaTeX Warning: Label `prob:设' multiply defined.
 
 
 LaTeX Warning: Label `prob:已' multiply defined.
@@ -855,9 +827,20 @@ LaTeX Warning: Label `prob:设' multiply defined.
 
 LaTeX Warning: Label `prob:设' multiply defined.
 
-) (./part1/排序不等式与切比雪夫不等式.aux) (./part1/补充练习题.aux
 
-LaTeX Warning: Label `prob:（' multiply defined.
+LaTeX Warning: Label `prob:设' multiply defined.
+
+
+LaTeX Warning: Label `prob:已' multiply defined.
+
+
+LaTeX Warning: Label `prob:设' multiply defined.
+
+
+LaTeX Warning: Label `prob:已' multiply defined.
+
+
+LaTeX Warning: Label `prob:设' multiply defined.
 
 
 LaTeX Warning: Label `prob:给' multiply defined.
@@ -1378,7 +1361,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26]
+[26])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1388,15 +1371,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [27]
+\openout2 = `part1/柯西不等式（一）.aux'.
+
+ (./part1/柯西不等式（一）.tex
+第三章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[28
 
-[28])
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1406,18 +1392,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [29]
-\openout2 = `part1/柯西不等式（一）.aux'.
-
- (./part1/柯西不等式（一）.tex
-第三章
 
 
-[30
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[30]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1498,7 +1481,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39]
+[39])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1508,15 +1491,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [40]
+\openout2 = `part1/柯西不等式（二）.aux'.
+
+ (./part1/柯西不等式（二）.tex
+第四章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[41
 
-[41])
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1526,18 +1512,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [42]
-\openout2 = `part1/柯西不等式（二）.aux'.
-
- (./part1/柯西不等式（二）.tex
-第四章
 
 
-[43
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[43]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1609,7 +1592,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[51]
+[51])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1619,15 +1602,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [52]
+\openout2 = `part1/柯西不等式（三）.aux'.
+
+ (./part1/柯西不等式（三）.tex
+第五章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[53
 
-[53])
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1637,18 +1623,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [54]
-\openout2 = `part1/柯西不等式（三）.aux'.
-
- (./part1/柯西不等式（三）.tex
-第五章
 
 
-[55
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[55]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1720,7 +1703,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[63]
+[63])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1730,15 +1713,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [64]
+\openout2 = `part1/排序不等式与切比雪夫不等式.aux'.
+
+ (./part1/排序不等式与切比雪夫不等式.tex
+第六章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[65
 
-[65]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1774,7 +1760,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[69])
+[69]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1784,18 +1770,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [70]
-\openout2 = `part1/排序不等式与切比雪夫不等式.aux'.
-
- (./part1/排序不等式与切比雪夫不等式.tex
-第六章
 
 
-[71
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[71]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1849,7 +1832,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[77]
+[77])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1859,15 +1842,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [78]
+\openout2 = `part1/补充练习题.aux'.
+
+ (./part1/补充练习题.tex
+第七章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[79
 
-[79]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1903,7 +1889,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[83])
+[83]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1913,18 +1899,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [84]
-\openout2 = `part1/补充练习题.aux'.
-
- (./part1/补充练习题.tex
-第七章
 
 
-[85
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[85]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1960,7 +1943,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[89])
+[89]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1971,21 +1954,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [90]
 
-[91
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[91]
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-]
-\openout2 = `part2/恒等变形.aux'.
-
- (./part2/恒等变形.tex
-第八章
-
-
-[92
-
-
-]
+[92]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2030,7 +2015,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[97]
+[97])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2041,23 +2026,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [98]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[99]
+[99
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[100]
+]
+\openout2 = `part2/恒等变形.aux'.
+
+ (./part2/恒等变形.tex
+第八章
+
+
+[100
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2219,7 +2202,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[118])
+[118]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2229,18 +2212,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [119]
-\openout2 = `part2/abel变换.aux'.
-
- (./part2/abel变换.tex
-第九章
 
 
-[120
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[120]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2294,7 +2274,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[126]
+[126])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2304,15 +2284,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [127]
+\openout2 = `part2/abel变换.aux'.
+
+ (./part2/abel变换.tex
+第九章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[128
 
-[128]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2348,7 +2331,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[132])
+[132]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2358,18 +2341,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [133]
-\openout2 = `part2/局部不等式.aux'.
-
- (./part2/局部不等式.tex
-第十章
 
 
-[134
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[134]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2423,7 +2403,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[140]
+[140])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2433,15 +2413,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [141]
+\openout2 = `part2/局部不等式.aux'.
+
+ (./part2/局部不等式.tex
+第十章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[142
 
-[142]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2558,19 +2541,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[155])
-\openout2 = `part2/调整法.aux'.
-
- (./part2/调整法.tex
-第十一章
+[155]
 
 
-[156
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[156]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2633,16 +2613,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[163]
+[163])
+\openout2 = `part2/调整法.aux'.
+
+ (./part2/调整法.tex
+第十一章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[164
 
-[164]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2660,7 +2643,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[166])
+[166]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2671,21 +2654,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [167]
 
-[168
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[168]
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-]
-\openout2 = `part3/伯努利不等式.aux'.
-
- (./part3/伯努利不等式.tex
-第十二章
-
-
-[169
-
-
-]
+[169]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2730,7 +2715,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[174]
+[174])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2741,23 +2726,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [175]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[176]
+[176
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[177]
+]
+\openout2 = `part3/伯努利不等式.aux'.
+
+ (./part3/伯努利不等式.tex
+第十二章
+
+
+[177
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2766,7 +2749,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[178])
+[178]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2776,18 +2759,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [179]
-\openout2 = `part3/著名不等式.aux'.
-
- (./part3/著名不等式.tex
-第十三章
 
 
-[180
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[180]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2841,7 +2821,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[186]
+[186])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2851,15 +2831,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [187]
+\openout2 = `part3/著名不等式.aux'.
+
+ (./part3/著名不等式.tex
+第十三章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[188
 
-[188]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2886,19 +2869,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[191])
-\openout2 = `part3/反向不等式.aux'.
-
- (./part3/反向不等式.tex
-第十四章
+[191]
 
 
-[192
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[192]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2961,16 +2941,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[199]
+[199])
+\openout2 = `part3/反向不等式.aux'.
+
+ (./part3/反向不等式.tex
+第十四章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[200
 
-[200]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2997,7 +2980,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[203])
+[203]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3007,18 +2990,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [204]
-\openout2 = `part3/凸函数不等式.aux'.
-
- (./part3/凸函数不等式.tex
-第十五章
 
 
-[205
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[205]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3072,7 +3052,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[211]
+[211])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3082,15 +3062,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [212]
+\openout2 = `part3/凸函数不等式.aux'.
+
+ (./part3/凸函数不等式.tex
+第十五章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[213
 
-[213]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3144,23 +3127,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[219])
-
-[220
+[219]
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-]
-\openout2 = `part4/绝对值不等式（一）.aux'.
-
- (./part4/绝对值不等式（一）.tex
-第十六章
-
-
-[221
+[220]
 
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[221]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3214,25 +3199,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[227]
+[227])
+
+[228
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[228]
+]
+\openout2 = `part4/绝对值不等式（一）.aux'.
+
+ (./part4/绝对值不等式（一）.tex
+第十六章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[229
 
-[229]
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3250,7 +3233,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[231])
+[231]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3260,23 +3243,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [232]
-\openout2 = `part4/绝对值不等式（二）.aux'.
-
- (./part4/绝对值不等式（二）.tex
-第十七章
 
 
-[233
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
-Overfull \hbox (0.81834pt too wide) detected at line 22
-[][][][] \OT1/cmr/m/n/12 + [] + [] + []
- []
-
-
+[233]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3330,7 +3305,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[239]
+[239])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3340,6 +3315,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [240]
+\openout2 = `part4/绝对值不等式（二）.aux'.
+
+ (./part4/绝对值不等式（二）.tex
+第十七章
+
+
+[241
+
+
+
+
+]
+Overfull \hbox (0.81834pt too wide) detected at line 22
+[][][][] \OT1/cmr/m/n/12 + [] + [] + []
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3348,16 +3340,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[241]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[242])
+[242]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3367,18 +3350,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [243]
-\openout2 = `part4/平均值原理.aux'.
-
- (./part4/平均值原理.tex
-第十八章
 
 
-[244
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[244]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3432,7 +3412,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[250]
+[250])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3442,15 +3422,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [251]
+\openout2 = `part4/平均值原理.aux'.
+
+ (./part4/平均值原理.tex
+第十八章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[252
 
-[252]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3477,7 +3460,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[255])
+[255]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3487,18 +3470,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [256]
-\openout2 = `part4/归纳法（一）.aux'.
-
- (./part4/归纳法（一）.tex
-第十九章
 
 
-[257
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[257]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3552,7 +3532,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[263]
+[263])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3562,15 +3542,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [264]
+\openout2 = `part4/归纳法（一）.aux'.
+
+ (./part4/归纳法（一）.tex
+第十九章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[265
 
-[265]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3597,19 +3580,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[268])
-\openout2 = `part4/归纳法（二）.aux'.
-
- (./part4/归纳法（二）.tex
-第二十章
+[268]
 
 
-[269
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-]
+[269]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3672,16 +3652,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[276]
+[276])
+\openout2 = `part4/归纳法（二）.aux'.
+
+ (./part4/归纳法（二）.tex
+第二十章
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[277
 
-[277]
+
+
+
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3699,7 +3682,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[279])
+[279]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3708,7 +3691,79 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[280] (./main.aux (./part1/均值不等式（一）.aux) (./part1/均值不等式（二）.aux) (./part1/柯西不等式（一）.aux) (./part1/柯西不等式（二）.aux) (./part1/柯西不等式（三）.aux) (./part1/排序不等式与切比雪夫不等式.aux) (./part1/补充练习题.aux) (./part2/恒等变形.aux) (./part2/abel变换.aux) (./part2/局部不等式.aux) (./part2/调整法.aux) (./part3/伯努利不等式.aux) (./part3/著名不等式.aux) (./part3/反向不等式.aux) (./part3/凸函数不等式.aux) (./part4/绝对值不等式（一）.aux) (./part4/绝对值不等式（二）.aux) (./part4/平均值原理.aux) (./part4/归纳法（一）.aux) (./part4/归纳法（二）.aux))
+[280]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[281]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[282]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[283]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[284]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[285]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[286]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[287])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[288] (./main.aux (./part1/均值不等式（一）.aux) (./part1/均值不等式（二）.aux) (./part1/柯西不等式（一）.aux) (./part1/柯西不等式（二）.aux) (./part1/柯西不等式（三）.aux) (./part1/排序不等式与切比雪夫不等式.aux) (./part1/补充练习题.aux) (./part2/恒等变形.aux) (./part2/abel变换.aux) (./part2/局部不等式.aux) (./part2/调整法.aux) (./part3/伯努利不等式.aux) (./part3/著名不等式.aux) (./part3/反向不等式.aux) (./part3/凸函数不等式.aux) (./part4/绝对值不等式（一）.aux) (./part4/绝对值不等式（二）.aux) (./part4/平均值原理.aux) (./part4/归纳法（一）.aux) (./part4/归纳法（二）.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/08/05>
@@ -3718,15 +3773,15 @@ L3 programming layer <2022/08/05>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CCD32E2AA8F4AE5B4193D19BCF5B9554;7479.
+(rerunfilecheck)             Checksum: 13C1767018FA5F795E039E1F9E01609A;7510.
  ) 
 Here is how much of TeX's memory you used:
- 34473 strings out of 473832
- 782016 string characters out of 5729482
- 1210399 words of memory out of 5000000
- 56836 multiletter control sequences out of 15000+600000
+ 34469 strings out of 473832
+ 781942 string characters out of 5729482
+ 1208453 words of memory out of 5000000
+ 56832 multiletter control sequences out of 15000+600000
  569385 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,12n,121p,1238b,1042s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (284 pages, 1944992 bytes).
+Output written on main.xdv (292 pages, 1929240 bytes).
