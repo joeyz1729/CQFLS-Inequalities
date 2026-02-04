@@ -52,22 +52,9 @@
 \end{preview}
 
 
-\newpage 
-\begin{preview}{}{}
-设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求证：存在 $k\in\{1,2,\dots,n\}$，使得对任意 $1\ge b_{1}\ge b_{2}\ge\dots\ge b_{n}\ge0$ 都有
-\begin{equation}
-    \left|\sum_{i=1}^{n}a_{i}b_{i}\right|\le\left|\sum_{i=1}^{k}a_{i}\right|.
-\end{equation}
-\end{preview}
 
-\vspace{7cm}
-\begin{preview}{}{}
-设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $b_{1}\ge b_{2}\ge\dots\ge b_{n}$，且对 $1\le k\le n$，有 $\prod_{i=1}^{k}a_{i}\ge\prod_{i=1}^{k}b_{i}.$ 
-求证：
-\begin{equation}
-    \sum_{i=1}^{n}a_{i}\ge\sum_{i=1}^{n}b_{i}.
-\end{equation}
-\end{preview}
+
+
 
 
 
@@ -93,6 +80,15 @@
 \newpage
 
 
+\begin{example}{}{}
+设 $a_{1},a_{2},\dots,a_{n}$ 是实数，求证：存在 $k\in\{1,2,\dots,n\}$，使得对任意 $1\ge b_{1}\ge b_{2}\ge\dots\ge b_{n}\ge0$ 都有
+\begin{equation}
+    \left|\sum_{i=1}^{n}a_{i}b_{i}\right|\le\left|\sum_{i=1}^{k}a_{i}\right|.
+\end{equation}
+\end{example}
+
+
+\newpage 
 \begin{example}{1999 APMO}{}
 设 $\{a_n\}$ 是正项数列，满足对任意 $i,j\ge1$，有 $a_{i+j}\le a_{i}+a_{j}.$ 求证：对任意正整数 $n$，有
 \begin{equation}
@@ -102,6 +98,15 @@
 \newpage
 
 
+\begin{example}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $b_{1}\ge b_{2}\ge\dots\ge b_{n}$，且对 $1\le k\le n$，有 $\prod_{i=1}^{k}a_{i}\ge\prod_{i=1}^{k}b_{i}.$ 
+求证：
+\begin{equation}
+    \sum_{i=1}^{n}a_{i}\ge\sum_{i=1}^{n}b_{i}.
+\end{equation}
+\end{example}
+
+\newpage
 \begin{example}{加强形式的Chebyshev不等式}{}
 设 $a_{1},a_{2},\dots,a_{n}$ 和 $b_{1},b_{2},\dots,b_{n}$ 是实数，满足
 \begin{gather}
@@ -113,31 +118,17 @@
     \sum_{i=1}^{n}a_{i}b_{i}\ge\frac{1}{n}\left(\sum_{i=1}^{n}a_{i}\right)\left(\sum_{i=1}^{n}b_{i}\right).
 \end{equation}
 \end{example}
+
+
 \newpage
-
-
 \begin{example}{}{}
 已知实数 $a_1,a_2,\dots,a_n$，证明：
 \begin{equation}
     \sum_{i=1}^n a_i^2 \geq\sum_{i=1}^{n-1} a_i a_{i+1} +\frac{3}{2(n+1)^3}\biggl(\sum_{i=1}^n a_i\biggr)^2
 \end{equation}
 \end{example}
+
 \newpage
-
-
-\begin{example}{}{}
-给定整数 $n\ge2$，设 $a_{1},a_{2},\dots,a_{n}$ 是正整数，满足对集合 $\{1,2,\dots,n\}$ 的任一非空子集 $I$，$\sum_{i\in I}a_{i}$ 互不相同。求：
-\begin{enumerate}
-    \item $\sum_{i=1}^{n}\sqrt{a_{i}}$ 的最小值；
-    \item $\sum_{i=1}^{n}a_{i}^{2}$ 的最小值；
-    \item $\sum_{i=1}^{n}\frac{1}{a_{i}}$ 的最大值。
-\end{enumerate}
-\end{example}
-\newpage
-
-
-
-
 % 第 8 题
 \begin{example}{2018 清华飞测}{}
 对任意 $n\in\mathbb N^+$ 设正实数 $a_1,a_2,\dots,a_n$ 满足 $\sum_{i=1}^n a_i\leq n^2$，证明：
@@ -145,9 +136,14 @@
     \sum_{i=1}^n \frac{1}{a_i} >\frac{1}{4}\log_2 n
 \end{equation}
 \end{example}
+
+
+
+
+
+
+
 \newpage
-
-
 \begin{example}{}{}
 给定整数 $n, k\ge2$. 设非负实数 $a_{1},a_{2},\dots,a_{n},c_{1},c_{2},\dots,c_{n}$ 满足：
 \begin{enumerate}
@@ -191,15 +187,6 @@ a_{1}\le a_{2},\quad a_{1}+a_{2}\le a_{3},\quad \dots,\quad a_{1}+a_{2}+\dots+a_
 \end{equation}
 \end{homework}
 
-\newpage
-\begin{homework}{}{}
-设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $a_{1}\le a_{2}\le\dots\le a_{n}$，且对 $1\le k\le n$，有 $\sum_{i=1}^{k}a_{i}\ge\sum_{i=1}^{k}b_{i}.$ 
-求证：
-\begin{equation}
-    \sum_{i=1}^{n}\sqrt{a_{i}}\ge\sum_{i=1}^{n}\sqrt{b_{i}}.
-\end{equation}
-\end{homework}
-
 
 \newpage
 \begin{homework}{}{}
@@ -219,3 +206,21 @@ a_{1}\le a_{2},\quad a_{1}+a_{2}\le a_{3},\quad \dots,\quad a_{1}+a_{2}+\dots+a_
 \end{equation}
 \end{homework}
 
+\newpage
+\begin{homework}{}{}
+设正实数 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 满足 $a_{1}\le a_{2}\le\dots\le a_{n}$，且对 $1\le k\le n$，有 $\sum_{i=1}^{k}a_{i}\ge\sum_{i=1}^{k}b_{i}.$ 
+求证：
+\begin{equation}
+    \sum_{i=1}^{n}\sqrt{a_{i}}\ge\sum_{i=1}^{n}\sqrt{b_{i}}.
+\end{equation}
+\end{homework}
+
+\newpage
+\begin{homework}{}{}
+给定整数 $n\ge2$，设 $a_{1},a_{2},\dots,a_{n}$ 是正整数，满足对集合 $\{1,2,\dots,n\}$ 的任一非空子集 $I$，$\sum_{i\in I}a_{i}$ 互不相同。求：
+\begin{enumerate}
+    \item $\sum_{i=1}^{n}\sqrt{a_{i}}$ 的最小值；
+    \item $\sum_{i=1}^{n}a_{i}^{2}$ 的最小值；
+    \item $\sum_{i=1}^{n}\frac{1}{a_{i}}$ 的最大值。
+\end{enumerate}
+\end{homework}
