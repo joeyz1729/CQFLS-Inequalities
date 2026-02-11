@@ -4,10 +4,14 @@
 本节介绍柯西不等式的几种形式，以及在证明分式不等式中的应用。
 
 \begin{thm}{柯西不等式}{}
+设 $a_{1},a_{2},\dots,a_{n},b_{1},b_{2},\dots,b_{n}$ 为实数，则
+\begin{equation}
+    \left(\sum_{i=1}^{n}a_{i}b_{i}\right)^{2}\le\left(\sum_{i=1}^{n}a_{i}^{2}\right)\left(\sum_{i=1}^{n}b_{i}^{2}\right).
+\end{equation}
 \end{thm}
 
 \newpage 
-\begin{thm}{积分形式}{}
+\begin{thm}{柯西不等式的积分形式}{}
 设 $f,g$ 是区间 $[a,b]$ 上的可积函数，求证：
 \begin{equation}
     \left(\int_{a}^{b}f(x)^{2}dx\right)\left(\int_{a}^{b}g(x)^{2}dx\right)\ge\left(\int_{a}^{b}f(x)g(x)dx\right)^{2}.
@@ -38,6 +42,8 @@
 \newpage 
 \section{分式型柯西不等式}
 
+
+\newpage 
 % 例 4
 \begin{example}{}{}
 设整数 $n\ge2$，正实数 $a_{1},a_{2},\dots,a_{n}$ 满足 $\sum_{i=1}^{n}a_{i}=\sum_{i=1}^{n}a_{i}^{3}$。求证：

@@ -1,18 +1,80 @@
-\contentsline {part}{第一部分\hspace {1em}基本方法}{1}{part.1}%
-\contentsline {chapter}{\numberline {第一章\hspace {.3em}}恒等变形}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}基础知识}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}预习题}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}例题}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}作业题}{20}{section.1.4}%
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}Abel 变换}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}基础知识}{27}{section.2.1}%
-\contentsline {section}{\numberline {2.2}预习题}{29}{section.2.2}%
-\contentsline {section}{\numberline {2.3}例题}{30}{section.2.3}%
-\contentsline {section}{\numberline {2.4}练习题}{38}{section.2.4}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}局部不等式}{44}{chapter.3}%
-\contentsline {section}{\numberline {3.1}例题}{44}{section.3.1}%
-\contentsline {section}{\numberline {3.2}练习题}{56}{section.3.2}%
-\contentsline {chapter}{\numberline {第四章\hspace {.3em}}调整法}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}预习题}{70}{section.4.1}%
-\contentsline {section}{\numberline {4.2}例题}{71}{section.4.2}%
-\contentsline {section}{\numberline {4.3}练习题}{77}{section.4.3}%
+\contentsline {part}{第一部分\hspace {1em}}{1}{part.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}均值不等式 (一)}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}均值不等式的加强}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}均值不等式的基本用法}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}作业题}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}均值不等式 (二)}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}基础知识}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}典型例题}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}作业题}{23}{section.2.3}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}柯西不等式 (一)}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}分式型柯西不等式}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}作业题}{38}{section.3.2}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}柯西不等式 (二)}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}换元法}{42}{section.4.1}%
+\contentsline {section}{\numberline {4.2}待定系数法}{46}{section.4.2}%
+\contentsline {section}{\numberline {4.3}裂项法}{48}{section.4.3}%
+\contentsline {section}{\numberline {4.4}作业题}{50}{section.4.4}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}柯西不等式 (三)}{54}{chapter.5}%
+\contentsline {section}{\numberline {5.1}拉格朗日恒等式}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hölder 不等式}{61}{section.5.2}%
+\contentsline {section}{\numberline {5.3}作业题}{64}{section.5.3}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}排序不等式与切比雪夫不等式}{66}{chapter.6}%
+\contentsline {section}{\numberline {6.1}基础知识}{66}{section.6.1}%
+\contentsline {section}{\numberline {6.2}例题}{68}{section.6.2}%
+\contentsline {section}{\numberline {6.3}作业题}{76}{section.6.3}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}练习题}{80}{chapter.7}%
+\contentsline {section}{\numberline {7.1}均值不等式}{80}{section.7.1}%
+\contentsline {section}{\numberline {7.2}柯西不等式}{87}{section.7.2}%
+\contentsline {section}{\numberline {7.3}综合练习}{104}{section.7.3}%
+\contentsline {part}{第二部分\hspace {1em}}{131}{part.2}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}恒等变形}{132}{chapter.8}%
+\contentsline {section}{\numberline {8.1}基础知识}{132}{section.8.1}%
+\contentsline {section}{\numberline {8.2}预习题}{136}{section.8.2}%
+\contentsline {section}{\numberline {8.3}例题}{137}{section.8.3}%
+\contentsline {section}{\numberline {8.4}作业题}{150}{section.8.4}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}Abel 变换}{157}{chapter.9}%
+\contentsline {section}{\numberline {9.1}基础知识}{157}{section.9.1}%
+\contentsline {section}{\numberline {9.2}预习题}{159}{section.9.2}%
+\contentsline {section}{\numberline {9.3}例题}{160}{section.9.3}%
+\contentsline {section}{\numberline {9.4}练习题}{168}{section.9.4}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}伯努利不等式}{174}{chapter.10}%
+\contentsline {section}{\numberline {10.1}基础知识}{174}{section.10.1}%
+\contentsline {section}{\numberline {10.2}例题}{176}{section.10.2}%
+\contentsline {section}{\numberline {10.3}练习题}{184}{section.10.3}%
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}其他著名不等式}{186}{chapter.11}%
+\contentsline {section}{\numberline {11.1}基础知识}{186}{section.11.1}%
+\contentsline {section}{\numberline {11.2}例题}{192}{section.11.2}%
+\contentsline {section}{\numberline {11.3}作业题}{195}{section.11.3}%
+\contentsline {part}{第三部分\hspace {1em}}{199}{part.3}%
+\contentsline {chapter}{\numberline {第十二章\hspace {.3em}}调整法}{200}{chapter.12}%
+\contentsline {section}{\numberline {12.1}预习题}{201}{section.12.1}%
+\contentsline {section}{\numberline {12.2}例题}{202}{section.12.2}%
+\contentsline {section}{\numberline {12.3}练习题}{208}{section.12.3}%
+\contentsline {chapter}{\numberline {第十三章\hspace {.3em}}局部不等式}{212}{chapter.13}%
+\contentsline {section}{\numberline {13.1}例题}{212}{section.13.1}%
+\contentsline {section}{\numberline {13.2}练习题}{221}{section.13.2}%
+\contentsline {chapter}{\numberline {第十四章\hspace {.3em}}反向不等式}{236}{chapter.14}%
+\contentsline {section}{\numberline {14.1}基础知识}{236}{section.14.1}%
+\contentsline {section}{\numberline {14.2}例题}{238}{section.14.2}%
+\contentsline {section}{\numberline {14.3}作业题}{247}{section.14.3}%
+\contentsline {chapter}{\numberline {第十五章\hspace {.3em}}凸函数与不等式}{254}{chapter.15}%
+\contentsline {section}{\numberline {15.1}重要定理}{254}{section.15.1}%
+\contentsline {section}{\numberline {15.2}例题}{257}{section.15.2}%
+\contentsline {section}{\numberline {15.3}作业题}{265}{section.15.3}%
+\contentsline {part}{第四部分\hspace {1em}}{269}{part.4}%
+\contentsline {chapter}{\numberline {第十六章\hspace {.3em}}绝对值不等式（一）}{270}{chapter.16}%
+\contentsline {section}{\numberline {16.1}例题}{270}{section.16.1}%
+\contentsline {section}{\numberline {16.2}作业题}{278}{section.16.2}%
+\contentsline {chapter}{\numberline {第十七章\hspace {.3em}}绝对值不等式 (二)}{282}{chapter.17}%
+\contentsline {section}{\numberline {17.1}例题}{282}{section.17.1}%
+\contentsline {section}{\numberline {17.2}作业题}{288}{section.17.2}%
+\contentsline {chapter}{\numberline {第十八章\hspace {.3em}}平均值原理与不等式}{298}{chapter.18}%
+\contentsline {section}{\numberline {18.1}例题}{298}{section.18.1}%
+\contentsline {section}{\numberline {18.2}作业题}{307}{section.18.2}%
+\contentsline {chapter}{\numberline {第十九章\hspace {.3em}}归纳法与不等式 (一)}{311}{chapter.19}%
+\contentsline {section}{\numberline {19.1}例题}{311}{section.19.1}%
+\contentsline {section}{\numberline {19.2}作业题}{319}{section.19.2}%
+\contentsline {chapter}{\numberline {第二十章\hspace {.3em}}归纳法与不等式 (二)}{323}{chapter.20}%
+\contentsline {section}{\numberline {20.1}例题}{323}{section.20.1}%
+\contentsline {section}{\numberline {20.2}作业题}{331}{section.20.2}%
